@@ -1,6 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--main-bg-color: #eed9e0;
+	--primary-color: #00272b;
+	--white-color: #fff;
+}
+
+.dm-serif-display-regular {
+	font-family: "DM Serif Display", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+	font-family: "DM Serif Display", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.bg-primary-color {
+	background-color: var(--primary-color);
+}
 
 body {
 	margin: 0;
@@ -8,8 +32,57 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--main-bg-color);
+	color: var(--primary-color);
 }
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+	margin: 0 auto;
+	/* max-width: 1700px; */
+	padding: 10px 40px;
+
+	/* @media screen and (min-width: 1700px) {
+		max-width: 1800px;
+	}
+
+	@media screen and (max-width: 1000px) {
+		margin: 0 40px;
+	}
+
+	@media screen and (max-width: 750px) {
+		margin: 0 20px;
+	}
+
+	@media screen and (max-width: 550px) {
+		margin: 0;
+	} */
+}
+
+/* RESET */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+
+	li {
+		list-style: none;
+	}
+}
+
+a {
+	/* color: var(--primary-color); */
+	color: inherit;
 }
