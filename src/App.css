@@ -1,21 +1,3 @@
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
 Header {
 	opacity: 0;
 	animation: fade-in 0.5s ease-in 0.5s;
@@ -34,4 +16,9 @@ Header {
 	.fade-in-layout {
 		opacity: 1;
 	}
+}
+
+App & * {
+	padding-left: 40px;
+	padding-right: 40px;
 }

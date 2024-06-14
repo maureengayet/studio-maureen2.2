@@ -44,10 +44,10 @@ const Header = () => {
 			<nav ref={menuRef} className={isOpen ? "nav-menu open" : "nav-menu closed"}>
 				<ul className="uppercase font-bold tracking-wide text-sm" onClick={closeMenu}>
 					<li>
-						<Link to="/">Service</Link>
+						<Link to="/">Services</Link>
 					</li>
 					<li>
-						<Link to="/">Reviews</Link>
+						<Link to="/">Work</Link>
 					</li>
 					<li>
 						<Link to="/">Contact</Link>
