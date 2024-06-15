@@ -5,14 +5,20 @@
 @tailwind utilities;
 
 :root {
-	--main-bg-color: #faf8f8;
-	--primary-color: #00272b;
+	--header-hight: 70px;
+	--padding-y: 40px;
+	/* Colors */
+	--color-light: #faf8f8;
+	--color-dark: #00272b;
+
+	--bg-color: var(--color-light);
+	--text-color: var(--color-dark);
 }
 
 [data-theme="dark"] {
 	/* Dark mode colors */
-	--main-bg-color: #00272b;
-	--primary-color: #faf8f8;
+	--bg-color: var(--color-dark);
+	--text-color: var(--color-light);
 }
 
 .dm-serif-display-regular {
@@ -33,8 +39,8 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: var(--main-bg-color);
-	color: var(--primary-color);
+	background-color: var(--bg-color);
+	color: var(--text-color);
 }
 
 code {
@@ -43,28 +49,11 @@ code {
 
 .App {
 	margin: 0 auto;
-	/* max-width: 1700px; */
-	padding-left: 40px;
-	padding-right: 40px;
-
-	/* @media screen and (min-width: 1700px) {
-		max-width: 1800px;
-	}
-
-	@media screen and (max-width: 1000px) {
-		margin: 0 40px;
-	}
-
-	@media screen and (max-width: 750px) {
-		margin: 0 20px;
-	}
-
-	@media screen and (max-width: 550px) {
-		margin: 0;
-	} */
+	padding-left: var(--padding-y);
+	padding-right: var(--padding-y);
 }
 
-.padding-y {
+.inner-padding-y {
 	padding-left: 80px;
 	padding-right: 80px;
 }

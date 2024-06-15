@@ -1,6 +1,7 @@
 .Intro {
 	position: relative;
 	z-index: 10;
+	padding-top: var(--header-hight);
 	
 	.intro-video {
 		display: flex;
@@ -12,6 +13,7 @@
 		position: relative;
 		border-radius: 14px;
 		overflow: hidden;
+		color: #00272b;
 
 		#background-video {
 			/* position: absolute;

@@ -1,9 +1,12 @@
 header {
-	height: 70px;
+	height: var(--header-hight);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	position: fixed;
+	z-index: 20;
+	width: calc(100% - var(--padding-y) * 2);
 
 	ul {
 		display: flex;

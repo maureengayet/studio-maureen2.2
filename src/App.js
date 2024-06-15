@@ -18,7 +18,7 @@ function App() {
 	}, []);
 
 	return (
-		<div className={`App bg ${showLayout ? "show-layout" : ""}`}>	
+		<div className={`App ${showLayout ? "show-layout" : ""}`}>	
 			<Header />
 			<Intro />
 			<Services />
