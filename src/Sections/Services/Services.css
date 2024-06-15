@@ -16,4 +16,13 @@
 			font-weight: 700;
 		}
 	}
+
+	@media screen and (max-width: 1000px) {
+		flex-direction: column;
+		row-gap: 80px;
+
+		.service {
+			row-gap: 20px;
+		}
+	}
 }
