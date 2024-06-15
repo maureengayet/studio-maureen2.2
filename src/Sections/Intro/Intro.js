@@ -5,7 +5,7 @@ const Intro = () => {
 		<div className="Intro">
 			<section className="intro-video fade-in-layout padding-y">
 				<video id="background-video" autoPlay loop muted>
-					<source src="./video7.mp4" type="video/mp4"></source>
+					<source src="./video12.mp4" type="video/mp4"></source>
 				</video>
 				<h1 className="text-7xl dm-serif-display-regular w-11/12 max-w-[980px]">
 					Bespoke <span className="italic">development</span> for unique <span className="italic">frontend</span> solutions.
