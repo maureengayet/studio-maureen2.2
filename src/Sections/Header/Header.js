@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { styles } from "./Header.css";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
+import ToggleMode from '../../Components/ToggleMode/ToggleMode'; 
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -14,20 +15,6 @@ const Header = () => {
 		setIsOpen(false);
 	};
 
-	//   useEffect(() => {
-	//     const handleClickOutside = (event) => {
-	//       if (menuRef.current && !menuRef.current.contains(event.target)) {
-	//         console.log('Clicked outside');
-	//         closeMenu();
-	//       }
-	//     };
-
-	//     document.addEventListener('mousedown', handleClickOutside);
-	//     return () => {
-	//       document.removeEventListener('mousedown', handleClickOutside);
-	//     };
-	//   }, [menuRef]);
-
 	return (
 		<header className="App-header fade-in-layout">
 			<Link className="Home-link" to="/">
@@ -35,11 +22,7 @@ const Header = () => {
 				{/* <img src={logo} className="App-logo" alt="logo" /> */}
 			</Link>
 
-			{/* <div onClick={toggleMenu} className={isOpen ? "hamburger-menu open" : "hamburger-menu"}>
-				<div className="bar"></div>
-				<div className="bar"></div>
-				<div className="bar"></div>
-			</div> */}
+			<ToggleMode />
 
 			<nav ref={menuRef} className={isOpen ? "nav-menu open" : "nav-menu closed"}>
 				<ul className="uppercase font-bold tracking-wide text-sm" onClick={closeMenu}>

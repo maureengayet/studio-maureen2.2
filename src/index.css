@@ -5,10 +5,14 @@
 @tailwind utilities;
 
 :root {
-	--main-bg-color: #eed9e0;
-	/* --main-bg-color: #faf8f8; */
+	--main-bg-color: #faf8f8;
 	--primary-color: #00272b;
-	--white-color: #fff;
+}
+
+[data-theme="dark"] {
+	/* Dark mode colors */
+	--main-bg-color: #00272b;
+	--primary-color: #faf8f8;
 }
 
 .dm-serif-display-regular {
@@ -21,10 +25,6 @@
 	font-family: "DM Serif Display", serif;
 	font-weight: 400;
 	font-style: italic;
-}
-
-.bg-primary-color {
-	background-color: var(--primary-color);
 }
 
 body {
@@ -44,8 +44,8 @@ code {
 .App {
 	margin: 0 auto;
 	/* max-width: 1700px; */
-	margin-left: 40px;
-	margin-right: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
 
 	/* @media screen and (min-width: 1700px) {
 		max-width: 1800px;
