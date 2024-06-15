@@ -3,6 +3,7 @@ import Header from "./Sections/Header/Header";
 import Footer from "./Sections/Footer/Footer";
 import Intro from "./Sections/Intro/Intro";
 import Services from "./Sections/Services/Services";
+import Work from "./Sections/Work/Work";
 import Contact from "./Sections/Contact/Contact";
 import React, { useState, useEffect } from "react";
 
@@ -18,10 +19,11 @@ function App() {
 	}, []);
 
 	return (
-		<div className={`App ${showLayout ? "show-layout" : ""}`}>	
+		<div className={`App ${showLayout ? "show-layout" : ""}`}>
 			<Header />
 			<Intro />
 			<Services />
+			<Work />
 			<Contact />
 			<Footer />
 		</div>

@@ -7,18 +7,25 @@
 :root {
 	--header-hight: 70px;
 	--padding-y: 40px;
-	/* Colors */
-	--color-light: #faf8f8;
-	--color-dark: #00272b;
+	--inner-padding-y: 80px;
+	--border-radius: 14px;
 
-	--bg-color: var(--color-light);
-	--text-color: var(--color-dark);
+	/* Colors */
+	--color-light: 250, 248, 248;
+	--color-light-2: 244, 242, 239;
+	--color-dark: 0, 39, 43;
+	--color-dark-2: 6, 45, 49;
+
+	--bg-color: rgb(var(--color-light));
+	--bg-color-2: rgb(var(--color-light-2));
+	--text-color: rgb(var(--color-dark));
 }
 
 [data-theme="dark"] {
 	/* Dark mode colors */
-	--bg-color: var(--color-dark);
-	--text-color: var(--color-light);
+	--bg-color: rgb(var(--color-dark));
+	--bg-color-2: rgb(var(--color-dark-2));
+	--text-color: rgb(var(--color-light));
 }
 
 .dm-serif-display-regular {
@@ -54,8 +61,8 @@ code {
 }
 
 .inner-padding-y {
-	padding-left: 80px;
-	padding-right: 80px;
+	padding-left: var(--inner-padding-y);
+	padding-right: var(--inner-padding-y);
 }
 
 /* RESET */

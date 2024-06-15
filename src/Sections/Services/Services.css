@@ -1,16 +1,19 @@
 .Services {
-	column-gap: 30px;
+	column-gap: 80px;
 	display: flex;
 	flex-direction: row;
+	border-radius: var(--border-radius);
+	background-color: var(--bg-color-2);
+	padding: var(--inner-padding-y);
 
 	.service {
 		flex-grow: 1;
 		display: flex;
 		flex-direction: column;
-		background-color: rgba(255, 255, 255, 0.1);
-		border: 1px solid rgba(255, 255, 255, 0.4);
-		border-radius: 14px;
-		padding: 60px;
 		row-gap: 40px;
+
+		p {
+			font-weight: 700;
+		}
 	}
 }
