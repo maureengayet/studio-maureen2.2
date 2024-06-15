@@ -23,11 +23,21 @@
 
 		h4 {
 			position: absolute;
+			top: 1vw;
+			left: 1vw;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+			font-weight: 700;
 		}
 
 		.skills {
 			position: absolute;
-			bottom: 0;
+			bottom: 1vw;
+			left: 1vw;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 0.875rem;
+			line-height: 1.3rem;
 
 			.skill {
 				list-style: none;
