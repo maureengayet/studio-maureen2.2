@@ -4,10 +4,17 @@ import { useState, useRef } from "react";
 import ToggleMode from '../../Components/ToggleMode/ToggleMode'; 
 
 const Header = () => {
+	const scrollToTop = () => {
+		document.documentElement.scrollTo({
+		  top: 0,
+		  behavior: 'smooth'
+		});
+	}
+
 	return (
 		<header className="App-header fade-in-layout">
 			<Link className="Home-link" to="/">
-				<h1 className="text-2xl dm-serif-display-regular">Studio Maureen</h1>
+				<h1 className="text-2xl dm-serif-display-regular" onClick={scrollToTop}>Studio Maureen</h1>
 				{/* <img src={logo} className="App-logo" alt="logo" /> */}
 			</Link>
 
