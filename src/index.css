@@ -29,6 +29,27 @@
 	--text-color: rgb(var(--color-light));
 }
 
+@media screen and (max-width: 1000px) {
+	:root {
+		--padding-y: 30px;
+		--inner-padding-y: 50px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	:root {
+		--padding-y: 20px;
+		--inner-padding-y: 30px;
+	}
+}
+
+@media screen and (max-width: 550) {
+	:root {
+		--padding-y: 10px;
+		--inner-padding-y: 20px;
+	}
+}
+
 .dm-serif-display-regular {
 	font-family: "DM Serif Display", serif;
 	font-weight: 400;
@@ -89,4 +110,14 @@ ul {
 a {
 	/* color: var(--primary-color); */
 	color: inherit;
+}
+
+/* Only break lines on big screens */
+@media screen and (min-width: 1200px) {
+	.new-line {
+		&::after {
+			content: '\a';
+			white-space: pre;
+		}
+	}
 }

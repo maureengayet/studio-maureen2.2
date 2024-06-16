@@ -4,17 +4,6 @@ import { useState, useRef } from "react";
 import ToggleMode from '../../Components/ToggleMode/ToggleMode'; 
 
 const Header = () => {
-	const [isOpen, setIsOpen] = useState(false);
-	const menuRef = useRef(null);
-
-	const toggleMenu = () => {
-		setIsOpen(!isOpen);
-	};
-
-	const closeMenu = () => {
-		setIsOpen(false);
-	};
-
 	return (
 		<header className="App-header fade-in-layout">
 			<Link className="Home-link" to="/">
@@ -24,8 +13,8 @@ const Header = () => {
 
 			<ToggleMode />
 
-			<nav ref={menuRef} className={isOpen ? "nav-menu open" : "nav-menu closed"}>
-				<ul className="uppercase font-bold tracking-wide text-sm" onClick={closeMenu}>
+			<nav>
+				<ul className="uppercase font-bold tracking-wide text-sm">
 					<li>
 						<Link to="/">Services</Link>
 					</li>

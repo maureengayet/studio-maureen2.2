@@ -7,13 +7,31 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 750px;
-		height: 80vh;
+		height: calc(100vh - var(--header-hight) - var(--padding-y));
 		justify-content: center;
 		row-gap: 40px;
 		position: relative;
 		border-radius: var(--border-radius);
 		overflow: hidden;
 		color: #00272b;
+		line-height: 1.1em;
+		
+
+		h1 {
+			font-size:calc(40px + 2.4vw);
+			line-height: 1em;
+		}
+
+		h2 {
+			font-size: calc(30px + 1.1vw);
+			line-height: 1.1em;
+			
+		}
+
+		p {
+			margin-top: 80px;
+			font-size: calc(16px + .3vw);
+		}
 
 		#background-video {
 			position: absolute;
@@ -30,5 +48,7 @@
 	.subheading {
 		margin-top: 120px;
 		margin-bottom: 120px;
+		font-size: calc(24px + 1vw);
+		line-height: 1.4em;
 	}
 }
