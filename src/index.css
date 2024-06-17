@@ -6,8 +6,8 @@
 
 :root {
 	--header-hight: 70px;
-	--padding-y: 40px;
-	--inner-padding-y: 80px;
+	--padding-x: 40px;
+	--inner-padding-x: 80px;
 	--border-radius: 14px;
 	--font-serif: "DM Serif Display", serif;
 
@@ -31,22 +31,22 @@
 
 @media screen and (max-width: 1000px) {
 	:root {
-		--padding-y: 30px;
-		--inner-padding-y: 50px;
+		--padding-x: 30px;
+		--inner-padding-x: 50px;
 	}
 }
 
 @media screen and (max-width: 750px) {
 	:root {
-		--padding-y: 20px;
-		--inner-padding-y: 30px;
+		--padding-x: 20px;
+		--inner-padding-x: 30px;
 	}
 }
 
 @media screen and (max-width: 550) {
 	:root {
-		--padding-y: 10px;
-		--inner-padding-y: 20px;
+		--padding-x: 10px;
+		--inner-padding-x: 20px;
 	}
 }
 
@@ -72,19 +72,25 @@ body {
 	color: var(--text-color);
 }
 
+.max-width {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .App {
 	margin: 0 auto;
-	padding-left: var(--padding-y);
-	padding-right: var(--padding-y);
+	padding-left: var(--padding-x);
+	padding-right: var(--padding-x);
 }
 
-.inner-padding-y {
-	padding-left: var(--inner-padding-y);
-	padding-right: var(--inner-padding-y);
+.inner-padding-x {
+	padding-left: var(--inner-padding-x);
+	padding-right: var(--inner-padding-x);
 }
 
 /* RESET */

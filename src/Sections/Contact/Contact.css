@@ -1,6 +1,9 @@
 .Contact {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
 	background-color: var(--bg-color-2);
 	border-radius: var(--border-radius);
-	display: inline-block;
-	padding-left: var(--inner-padding-y);
+	padding: var(--inner-padding-x);
+	width: 100%;
 }

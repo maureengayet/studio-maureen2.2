@@ -4,7 +4,7 @@
 	flex-direction: row;
 	border-radius: var(--border-radius);
 	background-color: var(--bg-color-2);
-	padding: var(--inner-padding-y);
+	padding: var(--inner-padding-x);
 
 	.service {
 		flex-grow: 1;

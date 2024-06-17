@@ -10,19 +10,15 @@ function Contact() {
 	return (
 		<form onSubmit={handleSubmit}>
 			<div className="form-name">
-				<label className="required" htmlFor="name">
-					Name
-				</label>
-
 				<div className="firstname">
+					<label className="required" htmlFor="name">Name</label>
 					<input id="firstname" type="firstname" required name="firstname" />
-					<p>First name</p>
+					<p className="text-sm">First name</p>
 					<ValidationError prefix="firstname" field="firstname" errors={state.errors} />
 				</div>
-
 				<div className="lastname">
 					<input id="lastname" type="lastname" required name="lastname" />
-					<p className="lastname">Last name</p>
+					<p className="text-sm">Last name</p>
 					<ValidationError prefix="lastname" field="lastname" errors={state.errors} />
 				</div>
 			</div>

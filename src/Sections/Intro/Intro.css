@@ -7,7 +7,7 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 750px;
-		height: calc(100vh - var(--header-hight) - var(--padding-y));
+		height: calc(100vh - var(--header-hight) - var(--padding-x));
 		justify-content: center;
 		row-gap: 40px;
 		position: relative;

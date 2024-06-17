@@ -1,4 +1,4 @@
 footer {
-	padding-top: var(--padding-y);
-	padding-bottom: var(--padding-y);
+	padding-top: var(--padding-x);
+	padding-bottom: var(--padding-x);
 }

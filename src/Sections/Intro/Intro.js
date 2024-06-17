@@ -3,7 +3,7 @@ import { styles } from "./Intro.css";
 const Intro = () => {
 	return (
 		<div className="Intro">
-			<section className="intro-video fade-in-layout inner-padding-y">
+			<section className="intro-video fade-in-layout inner-padding-x">
 				<video id="background-video" autoPlay loop muted>
 					<source src="./video17.mp4" type="video/mp4"></source>
 				</video>
@@ -16,7 +16,7 @@ const Intro = () => {
 				</h2>
 				<p className="text-base tracking-wide font-bold">A selection of work done between 2019—2024.</p>
 			</section>
-			<section className="intro-text inner-padding-y">
+			<section className="intro-text inner-padding-x">
 				<p className="dm-serif-display-regular leading-snug subheading w-11/12">
 					Hi there! I'm Maureen Gayet, an experienced freelance developer dedicated to creating innovative web and mobile solutions. With over 8 years
 					of expertise, I specialize in crafting high-quality, user-friendly applications tailored to meet your unique needs. Whether you're a startup
