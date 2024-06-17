@@ -1,0 +1,6 @@
+.Contact {
+	background-color: var(--bg-color-2);
+	border-radius: var(--border-radius);
+	display: inline-block;
+	padding-left: var(--inner-padding-y);
+}
