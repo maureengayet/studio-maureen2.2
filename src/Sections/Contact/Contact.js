@@ -5,10 +5,11 @@ import styles from "./Contact.css";
 function Contact() {
 	return (
 		<section className="Contact">
-			<div class="max-width">
+			<div class="section-header">
+				<p>Contact</p>
 				<h3>Please use the contact form below to get in touch, and I'll respond as soon as possible.</h3>
-				<ContactForm />
 			</div>
+			<ContactForm />
 		</section>
 	);
 }

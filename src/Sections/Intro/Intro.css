@@ -15,22 +15,22 @@
 		overflow: hidden;
 		color: #00272b;
 		line-height: 1.1em;
-		
 
 		h1 {
-			font-size:calc(40px + 2.4vw);
+			font-size: calc(40px + 2.4vw);
 			line-height: 1em;
+			font-family: var(--font-serif);
 		}
 
 		h2 {
 			font-size: calc(30px + 1.1vw);
 			line-height: 1.1em;
-			
+			font-family: var(--font-serif);
 		}
 
 		p {
 			margin-top: 80px;
-			font-size: calc(16px + .3vw);
+			font-size: calc(16px + 0.3vw);
 		}
 
 		#background-video {
@@ -50,5 +50,6 @@
 		margin-bottom: 120px;
 		font-size: calc(24px + 1vw);
 		line-height: 1.4em;
+		font-family: var(--font-serif);
 	}
 }

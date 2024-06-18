@@ -22,3 +22,29 @@ App & * {
 	margin-left: 40px;
 	margin-right: 40px;
 }
+
+.section-header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	row-gap: 20px;
+
+	p {
+		letter-spacing: 0, 025em;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-size: 2em;
+		font-family: var(--font-serif);
+		line-height: 1.2em;
+	}
+}

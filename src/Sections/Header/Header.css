@@ -8,6 +8,10 @@ header {
 	z-index: 20;
 	width: calc(100% - var(--padding-x) * 2);
 
+	h1 {
+		font-family: var(--font-serif);
+	}
+
 	ul {
 		display: flex;
 		flex-direction: row;
@@ -16,6 +20,4 @@ header {
 			text-decoration: none;
 		}
 	}
-
-
 }

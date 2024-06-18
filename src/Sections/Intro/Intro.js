@@ -7,11 +7,11 @@ const Intro = () => {
 				<video id="background-video" autoPlay loop muted>
 					<source src="./video17.mp4" type="video/mp4"></source>
 				</video>
-				<h1 className="dm-serif-display-regular">
+				<h1>
 					Bespoke <span className="italic">development</span> <span className="new-line">for </span>unique <span className="italic">frontend</span>{" "}
 					solutions.
 				</h1>
-				<h2 className="dm-serif-display-regular">
+				<h2>
 					Crafting exceptional digital <span className="new-line">experiences</span> to elevate your brand.
 				</h2>
 				<p className="text-base tracking-wide font-bold">A selection of work done between 2019—2024.</p>

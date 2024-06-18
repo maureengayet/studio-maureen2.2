@@ -50,16 +50,10 @@
 	}
 }
 
-.dm-serif-display-regular {
-	font-family: "DM Serif Display", serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
-.dm-serif-display-regular-italic {
-	font-family: "DM Serif Display", serif;
-	font-weight: 400;
-	font-style: italic;
+@layer components {
+	.small-caps {
+		@apply uppercase font-bold tracking-wide text-sm;
+	}
 }
 
 body {
@@ -122,7 +116,7 @@ a {
 @media screen and (min-width: 1200px) {
 	.new-line {
 		&::after {
-			content: '\a';
+			content: "\a";
 			white-space: pre;
 		}
 	}

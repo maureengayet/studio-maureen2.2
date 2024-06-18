@@ -2,6 +2,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	row-gap: 20px;
+	width: 100%;
 
 	.form-name {
 		display: flex;
@@ -9,12 +10,14 @@ form {
 		column-gap: 20px;
 		align-items: flex-end;
 
-		.firstname, .lastname {
+		.firstname,
+		.lastname {
 			width: 100%;
 		}
 	}
 
-	input, textarea {
+	input,
+	textarea {
 		background-color: transparent;
 		border-radius: 4px;
 		width: 100%;
@@ -26,6 +29,7 @@ form {
 		transition: 0.2s;
 		border: 2px solid var(--text-color);
 		padding: 0 14px;
+		margin: 2px 0;
 
 		&:focus {
 			outline: none;
