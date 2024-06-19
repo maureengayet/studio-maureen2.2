@@ -16,10 +16,13 @@
 	--color-light-2: 244, 242, 239;
 	--color-dark: 0, 39, 43;
 	--color-dark-2: 6, 45, 49;
+	--color-light-accent: 151, 215, 192;
+	--color-dark-accent: 147, 88, 245;
 
 	--bg-color: rgb(var(--color-light));
 	--bg-color-2: rgb(var(--color-light-2));
 	--text-color: rgb(var(--color-dark));
+	--text-accent: rgb(var(--color-light-accent));
 }
 
 [data-theme="dark"] {
@@ -27,6 +30,7 @@
 	--bg-color: rgb(var(--color-dark));
 	--bg-color-2: rgb(var(--color-dark-2));
 	--text-color: rgb(var(--color-light));
+	--text-accent: rgb(var(--color-dark-accent));
 }
 
 @media screen and (max-width: 1000px) {
@@ -64,6 +68,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--bg-color);
 	color: var(--text-color);
+}
+
+.text-accent {
+	color: var(--text-accent);
 }
 
 .max-width {

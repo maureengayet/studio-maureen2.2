@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../../Components/ToggleMode/ContactForm/ContactForm";
+import ContactForm from "../../Components/ContactForm/ContactForm";
 import styles from "./Contact.css";
 
 function Contact() {
