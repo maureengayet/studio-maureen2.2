@@ -1,5 +1,5 @@
 import { styles } from "./Pricing.css";
-import { CheckIcon } from "@heroicons/react/20/solid";
+import { CheckIcon } from "@heroicons/react/24/solid";
 
 const Pricing = () => {
 	const packages = [
@@ -22,9 +22,9 @@ const Pricing = () => {
 
 	let packagesList = [];
 
-	packages.forEach((object) => {
+	packages.forEach((object, index) => {
 		packagesList.push(
-			<div className="package">
+			<div key={index} className="package">
 				<div className="description">
 					<h4 className="small-caps">{object.title}</h4>
 					<p>{object.text}</p>
@@ -32,7 +32,7 @@ const Pricing = () => {
 				<ul>
 					{object.list.map((item, index) => (
 						<li key={index}>
-							<CheckIcon class="size-5 text-accent inline mr-2" /> {item}
+							<CheckIcon className="size-5 text-accent inline mr-2" /> {item}
 						</li>
 					))}
 				</ul>

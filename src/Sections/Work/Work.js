@@ -3,7 +3,7 @@ import { styles } from "./Work.css";
 const Work = () => {
 	return (
 		<section className="Work">
-			<div class="project">
+			<div className="project">
 				<h4>Melano Jewelry</h4>
 				<ul className="skills">
 					<li>Development</li>
@@ -11,7 +11,7 @@ const Work = () => {
 				</ul>
 				<img src="./melano.jpeg" alt="Melano" className="project-bg" />
 			</div>
-			<div class="project">
+			<div className="project">
 				<h4>Voltact</h4>
 				<ul className="skills">
 					<li>UI/UX Design</li>
@@ -19,7 +19,7 @@ const Work = () => {
 				</ul>
 				<img src="./voltact.jpg" alt="Voltact" className="project-bg" />
 			</div>
-			<div class="project">
+			<div className="project">
 				<h4>Shop Ateljé</h4>
 				<ul className="skills">
 					<li>Development</li>

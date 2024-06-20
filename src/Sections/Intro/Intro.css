@@ -1,13 +1,12 @@
 .Intro {
 	position: relative;
 	z-index: 10;
-	padding-top: var(--header-hight);
 
 	.intro-video {
 		display: flex;
 		flex-direction: column;
 		min-height: 750px;
-		height: calc(100vh - var(--header-hight) - var(--padding-x));
+		height: calc(100vh - var(--header-height) - var(--padding-x));
 		justify-content: center;
 		row-gap: 40px;
 		position: relative;

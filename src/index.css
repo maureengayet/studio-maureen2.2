@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-	--header-hight: 70px;
+	--header-height: 70px;
 	--padding-x: 40px;
 	--inner-padding-x: 80px;
 	--border-radius: 14px;
@@ -24,6 +24,21 @@
 	--bg-color-2: rgb(var(--color-light-2));
 	--text-color: rgb(var(--color-dark));
 	--text-accent: rgb(var(--color-light-accent));
+
+	@media screen and (max-width: 1000px) {
+		--padding-x: 30px;
+		--inner-padding-x: 50px;
+	}
+
+	@media screen and (max-width: 750px) {
+		--padding-x: 20px;
+		--inner-padding-x: 30px;
+	}
+
+	@media screen and (max-width: 550px) {
+		--padding-x: 10px;
+		--inner-padding-x: 20px;
+	}
 }
 
 [data-theme="dark"] {
@@ -32,27 +47,6 @@
 	--bg-color-2: rgb(var(--color-dark-2));
 	--text-color: rgb(var(--color-light));
 	--text-accent: rgb(var(--color-dark-accent));
-}
-
-@media screen and (max-width: 1000px) {
-	:root {
-		--padding-x: 30px;
-		--inner-padding-x: 50px;
-	}
-}
-
-@media screen and (max-width: 750px) {
-	:root {
-		--padding-x: 20px;
-		--inner-padding-x: 30px;
-	}
-}
-
-@media screen and (max-width: 550) {
-	:root {
-		--padding-x: 10px;
-		--inner-padding-x: 20px;
-	}
 }
 
 @layer components {

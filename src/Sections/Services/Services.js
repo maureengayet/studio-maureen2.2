@@ -22,9 +22,9 @@ const Services = () => {
 
 	let serviceList = [];
 
-	services.forEach((service) => {
+	services.forEach((service, index) => {
 		serviceList.push(
-			<div className="service">
+			<div key={index} className="service">
 				<h3 className="small-caps">{service.title}</h3>
 				<p>{service.text}</p>
 			</div>
@@ -33,7 +33,7 @@ const Services = () => {
 
 	return (
 		<section className="Services">
-			<div class="section-header">
+			<div className="section-header">
 				<p className="small-caps">Services</p>
 				<h2>Services provided by me.</h2>
 			</div>
