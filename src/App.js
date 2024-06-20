@@ -23,7 +23,7 @@ function App() {
 		<div className={`App ${showLayout ? "show-layout" : ""}`}>
 			<Header />
 			<Intro />
-			{/* <Services /> */}
+			<Services />
 			<Work />
 			<Pricing />
 			<Contact />

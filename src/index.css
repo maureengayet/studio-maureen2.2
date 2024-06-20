@@ -19,6 +19,7 @@
 	--color-light-accent: 151, 215, 192;
 	--color-dark-accent: 147, 88, 245;
 
+	/* Light mode colors */
 	--bg-color: rgb(var(--color-light));
 	--bg-color-2: rgb(var(--color-light-2));
 	--text-color: rgb(var(--color-dark));
@@ -95,28 +96,7 @@ code {
 	padding-right: var(--inner-padding-x);
 }
 
-/* RESET */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
-}
-
-ul {
-	padding: 0;
-	margin: 0;
-
-	li {
-		list-style: none;
-	}
-}
-
 a {
-	/* color: var(--primary-color); */
 	color: inherit;
 }
 
