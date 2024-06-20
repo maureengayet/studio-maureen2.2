@@ -27,11 +27,11 @@ const Header = () => {
 	const navigation = [{ breadcrumb: "Contact", url: "/contact" }];
 
 	const navigationList = navigation.map((link, index) => (
-		<li key={index} className={location.pathname === link.url ? "current" : ""}>
+		<p key={index} className={`${location.pathname === link.url ? "current" : ""} small-caps`}>
 			<Link onClick={() => scrollToTop(link.url)} to={link.url}>
 				{link.breadcrumb}
 			</Link>
-		</li>
+		</p>
 	));
 
 	return (
@@ -42,7 +42,7 @@ const Header = () => {
 
 			<nav>
 				<ToggleMode />
-				<ul className="small-caps">{navigationList}</ul>
+				{navigationList}
 			</nav>
 		</header>
 	);

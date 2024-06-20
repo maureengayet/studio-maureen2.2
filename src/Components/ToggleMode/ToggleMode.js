@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { SunIcon } from "@heroicons/react/24/outline";
+import { MoonIcon } from "@heroicons/react/24/solid";
+import { styles } from "./ToggleMode.css";
 
 const ToggleMode = () => {
 	const [isDark, setIsDark] = useState(false);
@@ -21,11 +24,9 @@ const ToggleMode = () => {
 	};
 
 	return (
-		// <button onClick={toggleTheme}>
-		//   {isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-		// </button>
-
-		<button onClick={toggleTheme}>{isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}</button>
+		<button className="w-8 h-8" onClick={toggleTheme}>
+			{isDark ? <SunIcon className="size-5 inline" /> : <MoonIcon className="size-4 inline" />}
+		</button>
 	);
 };
 
