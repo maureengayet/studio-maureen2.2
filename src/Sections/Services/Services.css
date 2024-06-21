@@ -1,3 +1,39 @@
+.marquee {
+	width: 100%;
+	overflow: hidden;
+	font-family: var(--serif);
+	display: flex;
+	align-items: center;
+	font-size: 200px;
+	position: relative;
+	color: black;
+}
+
+.marquee-content {
+	display: inline-block;
+	white-space: nowrap;
+	animation: marquee 2s linear infinite;
+	position: absolute; /* Position each content absolute */
+}
+
+/* Position one content right after the other */
+.marquee-content:first-of-type {
+	left: 0;
+}
+
+.marquee-content:last-of-type {
+	left: 100%;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
 .Services {
 	display: flex;
 	flex-direction: column;

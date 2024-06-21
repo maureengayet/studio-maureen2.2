@@ -1,8 +1,29 @@
 button {
-	background-color: var(--bg-color-2);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--text-color);
 	border-radius: 5px;
+	backdrop-filter: blur(10px);
+	position: relative;
+	overflow: hidden;
+	color: var(--text-color);
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: var(--text-color);
+		opacity: 0.05;
+		transition: 0.1s ease-in-out;
+	}
+
+	&:hover {
+		&::before {
+			opacity: 0.15;
+			z-index: -2;
+		}
+	}
 }
