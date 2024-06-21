@@ -1,0 +1,23 @@
+.marquee-container {
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+
+.marquee {
+	display: inline-block;
+	white-space: nowrap;
+	animation: marquee 20s linear infinite;
+	font-size: 200px;
+	color: var(--text-color); /* Assuming you have defined --text-color in your CSS variables */
+	font-family: var(--font-serif); /* Assuming you have defined --font-serif in your CSS variables */
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}

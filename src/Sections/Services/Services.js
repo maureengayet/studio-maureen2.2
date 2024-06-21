@@ -1,3 +1,4 @@
+import Marquee from "../../Components/Marquee/Marquee";
 import { styles } from "./Services.css";
 
 const Services = () => {
@@ -33,20 +34,7 @@ const Services = () => {
 
 	return (
 		<section className="Services">
-			{/* <div className="section-header">
-				<p className="small-caps">Services</p>
-				<h2>Services provided by me.</h2>
-			</div> */}
-			<div className="marquee">
-				<div className="marquee-content">
-					Service Service Service Service Service Service Service Service Service Service Service Service Service Service Service Service Service
-					Service Service Service
-				</div>
-				<div className="marquee-content">
-					Service Service Service Service Service Service Service Service Service Service Service Service Service Service Service Service Service
-					Service Service Service
-				</div>
-			</div>
+			<Marquee text="Service Service Service Service Service " />
 			<div className="services-group">{serviceList}</div>
 		</section>
 	);
