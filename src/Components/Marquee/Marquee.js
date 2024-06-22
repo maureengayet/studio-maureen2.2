@@ -8,18 +8,18 @@ const Marquee = ({ text }) => {
 		const marqueeContent = marqueeRef.current;
 		if (marqueeContent) {
 			const contentWidth = marqueeContent.scrollWidth;
-			const containerWidth = marqueeContent.parentElement.offsetWidth;
+			const narrowWidth = marqueeContent.parentElement.offsetWidth;
 
 			// Duplicate content to ensure seamless scrolling
-			if (contentWidth < containerWidth) {
-				const repeatCount = Math.ceil(containerWidth / contentWidth);
+			if (contentWidth < narrowWidth) {
+				const repeatCount = Math.ceil(narrowWidth / contentWidth);
 				marqueeContent.innerHTML = text.repeat(repeatCount + 1);
 			}
 		}
 	}, [text]);
 
 	return (
-		<div className="marquee-container">
+		<div className="marquee-narrow pointer-events-none">
 			<div className="marquee" ref={marqueeRef}>
 				{text}
 			</div>

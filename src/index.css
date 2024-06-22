@@ -14,16 +14,17 @@
 	/* Colors */
 	--color-light: 250, 248, 248;
 	--color-light-2: 244, 242, 239;
-	--color-dark: 0, 39, 43;
+	--color-dark: #00272B;
 	--color-dark-2: 6, 45, 49;
-	--color-light-accent: 151, 215, 192;
 	--color-dark-accent: 147, 88, 245;
+	--color-light-green: #E8ECD2;
 
 	/* Light mode colors */
 	--bg-color: rgb(var(--color-light));
 	--bg-color-2: rgb(var(--color-light-2));
-	--text-color: rgb(var(--color-dark));
-	--text-accent: rgb(var(--color-light-accent));
+	--bg-color-3: var(--color-light-green);
+	--text-color: var(--color-dark);
+	--text-accent: var(--color-light-green);
 
 	@media screen and (max-width: 1000px) {
 		--padding-x: 30px;
@@ -43,8 +44,9 @@
 
 [data-theme="dark"] {
 	/* Dark mode colors */
-	--bg-color: rgb(var(--color-dark));
+	--bg-color: var(--color-dark);
 	--bg-color-2: rgb(var(--color-dark-2));
+	--bg-color-3: var(--color-dark);
 	--text-color: rgb(var(--color-light));
 	--text-accent: rgb(var(--color-dark-accent));
 }
@@ -53,6 +55,22 @@
 	.small-caps {
 		@apply uppercase font-bold tracking-wide text-sm;
 	}
+
+	.max-w {
+		@apply mx-auto max-w-screen-2xl;
+	}
+
+	.narrow {
+		@apply px-4 sm:px-6 lg:px-10
+	}
+
+	.wide {
+		@apply mx-4 sm:mx-6 lg:mx-10;
+	}
+}
+
+.serif {
+	font-family: var(--font-serif);
 }
 
 body {
@@ -69,20 +87,8 @@ body {
 	color: var(--text-accent);
 }
 
-.max-width {
-	width: 100%;
-	max-width: 900px;
-	margin: 0 auto;
-}
-
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-.App {
-	margin: 0 auto;
-	padding-left: var(--padding-x);
-	padding-right: var(--padding-x);
 }
 
 .inner-padding-x {

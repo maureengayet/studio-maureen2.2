@@ -1,4 +1,4 @@
-import Contact from "../Sections/Contact/Contact";
+import Contact from "../Sections/Contact";
 
 const ContactPage = () => {
 	return <Contact></Contact>;

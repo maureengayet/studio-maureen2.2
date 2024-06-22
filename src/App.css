@@ -44,6 +44,6 @@ Header {
 	}
 }
 
-.page {
-	padding-top: var(--header-height);
+.Contact {
+	background-color: var(--bg-color-3);
 }

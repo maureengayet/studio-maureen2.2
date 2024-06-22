@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "./Sections/Header/Header";
-import Footer from "./Sections/Footer/Footer";
+import Header from "./Sections/Header";
+import Footer from "./Sections/Footer";
 import React, { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 
@@ -18,9 +18,7 @@ function App() {
 	return (
 		<div className={`App ${showLayout ? "show-layout" : ""}`}>
 			<Header />
-			<div className="page">
-				<Outlet></Outlet>
-			</div>
+			<Outlet></Outlet>
 			<Footer />
 		</div>
 	);

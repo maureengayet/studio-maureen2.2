@@ -1,7 +1,8 @@
-.marquee-container {
+.marquee-narrow {
 	width: 100%;
 	overflow: hidden;
-	position: absolute;
+	/* position: absolute; */
+	pointer-events: none;
 }
 
 .marquee {
@@ -9,8 +10,8 @@
 	white-space: nowrap;
 	animation: marquee 20s linear infinite;
 	font-size: 200px;
-	color: var(--text-color); /* Assuming you have defined --text-color in your CSS variables */
-	font-family: var(--font-serif); /* Assuming you have defined --font-serif in your CSS variables */
+	color: var(--text-color);
+	font-family: var(--font-serif);
 }
 
 @keyframes marquee {
