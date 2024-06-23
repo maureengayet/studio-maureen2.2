@@ -37,7 +37,7 @@ const Header = () => {
 	return (
 		<header className="App-header fade-in-layout wide">
 			<Link className="Home-link" to="/" onClick={() => scrollToTop("/")}>
-				<h1 className="text-2xl select-none">Studio Maureen</h1>
+				<h1 className="text-2xl select-none serif">Studio Maureen</h1>
 			</Link>
 
 			<nav>

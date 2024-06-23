@@ -1,4 +1,5 @@
 import Marquee from "./../Components/Marquee/Marquee";
+import Parallax from "./../Components/Parallax/Parallax"
 
 const Services = () => {
 	const services = [
@@ -32,9 +33,10 @@ const Services = () => {
 	});
 
 	return (
-		<section className="Services pt-16 pb-36">
-			<Marquee text="Service Service Service Service Service " />
-			<div className="services-group max-w narrow pt-36 flex gap-x-12 md:gap-x-20">{serviceList}</div>
+		<section className="Services pt-16">
+			<Marquee text="Service Service Service Service Service Service Service Service Service" />
+			<div className="services-group max-w narrow pt-36 grid pb-16 sm:grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-12 md:gap-x-20">{serviceList}</div>
+			<Parallax src="./contact.jpg"/>
 		</section>
 	);
 };

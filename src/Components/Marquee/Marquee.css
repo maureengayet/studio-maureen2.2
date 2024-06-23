@@ -9,7 +9,7 @@
 	display: inline-block;
 	white-space: nowrap;
 	animation: marquee 20s linear infinite;
-	font-size: 200px;
+	font-size: 160px;
 	color: var(--text-color);
 	font-family: var(--font-serif);
 }

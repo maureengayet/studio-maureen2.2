@@ -21,8 +21,8 @@
 
 	/* Light mode colors */
 	--bg-color: var(--color-light);
-	--bg-color-2: var(--color-pink);
-	--bg-color-3: var(--color-light-green);
+	--bg-color-1: var(--color-pink);
+	--bg-color-2: var(--color-light-green);
 	--text-color: var(--color-dark);
 	--text-accent: var(--color-light-green);
 
@@ -45,8 +45,8 @@
 [data-theme="dark"] {
 	/* Dark mode colors */
 	--bg-color: var(--color-dark);
-	--bg-color-2: var(--color-dark-2);
-	--bg-color-3: var(--color-dark-green);
+	--bg-color-1: var(--color-dark-1);
+	--bg-color-2: var(--color-dark-green);
 	--text-color: var(--color-light);
 	--text-accent: var(--color-purple);
 }
@@ -57,7 +57,7 @@
 	}
 
 	.max-w {
-		@apply mx-auto max-w-screen-2xl;
+		@apply mx-auto max-w-screen-2xl w-full;
 	}
 
 	.narrow {
@@ -66,6 +66,18 @@
 
 	.wide {
 		@apply mx-4 sm:mx-6 lg:mx-10;
+	}
+
+	.bg {
+		background-color: var(--bg-color);
+	}
+
+	.bg-1 {
+		background-color: var(--bg-color-1);
+	}
+
+	.bg-2 {
+		background-color: var(--bg-color-2);
 	}
 }
 

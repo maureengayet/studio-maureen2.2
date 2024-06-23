@@ -4,7 +4,7 @@ import ContactForm from "./../Components/ContactForm/ContactForm";
 function Contact() {
 	return (
 		<section className="Contact flex grow justify-center rounded-2xl overflow-hidden">
-			<div className="flex flex-col items-center px-12 py-20 justify-center lg:w-2/3 2xl:w-3/5">
+			<div className="flex flex-col max-w narrow items-center px-12 py-20 justify-center">
 				<div className="max-w-[800px] flex flex-col gap-y-12">
 					<div className="section-header">
 						<p>Contact</p>

@@ -1,4 +1,6 @@
 const Work = () => {
+
+	
 	return (
 		<section className="Work max-w narrow">
 			<div className="project">
@@ -23,7 +25,7 @@ const Work = () => {
 					<li>Development</li>
 					<li>Shopify</li>
 				</ul>
-				<img src="./atelje.jpeg" alt="Atelej" className="project-bg" />
+				<img src="./atelje.jpeg" alt="Ateljé" className="project-bg" />
 			</div>
 		</section>
 	);

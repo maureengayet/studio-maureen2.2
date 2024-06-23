@@ -8,10 +8,6 @@ header {
     z-index: 50;
     height: 70px;
 
-	h1 {
-		font-family: var(--font-serif);
-	}
-
 	nav {
 		display: flex;
 		flex-direction: row;

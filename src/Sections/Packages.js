@@ -28,7 +28,7 @@ const Packages = () => {
 					<h4 className="small-caps my-4">{object.title}</h4>
 					<p className="my-4">{object.text}</p>
 				</div>
-				<ul>
+				<ul className="my-4">
 					{object.list.map((item, index) => (
 						<li key={index}>
 							<CheckIcon className="size-5 text-accent inline mr-2" /> {item}
@@ -42,11 +42,11 @@ const Packages = () => {
 	return (
 		<section className="Packages py-36">
 			<div className="max-w narrow flex flex-col gap-y-36">
-				<div className="section-header">
+				<div className="flex flex-col gap-y-4 items-start">
 					<p className="small-caps">Packages</p>
-					<h2>Choose the right package for your brand.</h2>
+					<h2 className="serif text-6xl leading-tight w-11/12 sm:w-10/12 md:text-7xl md:w-8/12 md:leading-tight lg:w-7/12">Choose the right package for your brand.</h2>
 				</div>
-				<div className="packages-list flex flex-row gap-x-12 md:gap-x-20">{packagesList}</div>
+				<div className="packages-list p-10 rounded-2xl bg max-w grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-12 md:gap-x-20">{packagesList}</div>
 			</div>
 		</section>
 	);
