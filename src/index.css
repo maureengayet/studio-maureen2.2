@@ -45,8 +45,8 @@
 [data-theme="dark"] {
 	/* Dark mode colors */
 	--bg-color: var(--color-dark);
-	--bg-color-1: var(--color-dark-1);
-	--bg-color-2: var(--color-dark-green);
+	--bg-color-1: var(--color-green);
+	--bg-color-2: var(--color-purple);
 	--text-color: var(--color-light);
 	--text-accent: var(--color-purple);
 }
