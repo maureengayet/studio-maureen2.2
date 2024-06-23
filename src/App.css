@@ -44,6 +44,16 @@ Header {
 	}
 }
 
+/* Color Settings Sections*/
+
+.Services {
+	background-color: var(--bg-color-2);
+}
+
 .Contact {
 	background-color: var(--bg-color-3);
+}
+
+.Packages {
+	background-color: var(--bg-color-2);
 }

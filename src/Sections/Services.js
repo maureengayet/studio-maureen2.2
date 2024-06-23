@@ -1,5 +1,4 @@
 import Marquee from "./../Components/Marquee/Marquee";
-import { styles } from "./Services.css";
 
 const Services = () => {
 	const services = [
@@ -25,17 +24,17 @@ const Services = () => {
 
 	services.forEach((service, index) => {
 		serviceList.push(
-			<div key={index} className="service">
-				<h3 className="small-caps">{service.title}</h3>
-				<p>{service.text}</p>
+			<div key={index} className="service w-full">
+				<h3 className="small-caps my-4">{service.title}</h3>
+				<p className="my-4">{service.text}</p>
 			</div>
 		);
 	});
 
 	return (
-		<section className="Services">
+		<section className="Services pt-16 pb-36">
 			<Marquee text="Service Service Service Service Service " />
-			<div className="services-group max-w narrow">{serviceList}</div>
+			<div className="services-group max-w narrow pt-36 flex gap-x-12 md:gap-x-20">{serviceList}</div>
 		</section>
 	);
 };

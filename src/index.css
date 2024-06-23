@@ -5,23 +5,23 @@
 @tailwind utilities;
 
 :root {
-	--header-height: 70px;
-	--padding-x: 40px;
-	--inner-padding-x: 80px;
 	--border-radius: 14px;
 	--font-serif: "DM Serif Display", serif;
 
 	/* Colors */
-	--color-light: 250, 248, 248;
-	--color-light-2: 244, 242, 239;
-	--color-dark: #00272B;
-	--color-dark-2: 6, 45, 49;
-	--color-dark-accent: 147, 88, 245;
-	--color-light-green: #E8ECD2;
+	--color-light: #fbfaf4;
+	--color-white: #ffffff;
+	--color-dark: #00272b;
+	--color-dark-2: #032b30;
+	--color-purple: #a23b91;
+	--color-light-green: #e8ecd2;
+	--color-green: #97d7c0;
+	--color-pink: #e7cdd5;
+	--color-dark-green: #342a06;
 
 	/* Light mode colors */
-	--bg-color: rgb(var(--color-light));
-	--bg-color-2: rgb(var(--color-light-2));
+	--bg-color: var(--color-light);
+	--bg-color-2: var(--color-pink);
 	--bg-color-3: var(--color-light-green);
 	--text-color: var(--color-dark);
 	--text-accent: var(--color-light-green);
@@ -45,10 +45,10 @@
 [data-theme="dark"] {
 	/* Dark mode colors */
 	--bg-color: var(--color-dark);
-	--bg-color-2: rgb(var(--color-dark-2));
-	--bg-color-3: var(--color-dark);
-	--text-color: rgb(var(--color-light));
-	--text-accent: rgb(var(--color-dark-accent));
+	--bg-color-2: var(--color-dark-2);
+	--bg-color-3: var(--color-dark-green);
+	--text-color: var(--color-light);
+	--text-accent: var(--color-purple);
 }
 
 @layer components {
@@ -61,7 +61,7 @@
 	}
 
 	.narrow {
-		@apply px-4 sm:px-6 lg:px-10
+		@apply px-4 sm:px-6 lg:px-10;
 	}
 
 	.wide {
@@ -91,9 +91,9 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.inner-padding-x {
-	padding-left: var(--inner-padding-x);
-	padding-right: var(--inner-padding-x);
+.full-height {
+	min-height: calc(100vh - 134px);
+	display: flex;
 }
 
 a {

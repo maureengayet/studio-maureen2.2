@@ -1,5 +1,3 @@
-import { styles } from "./Work.css";
-
 const Work = () => {
 	return (
 		<section className="Work max-w narrow">

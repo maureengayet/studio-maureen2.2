@@ -1,4 +1,3 @@
-// import { styles } from "./Pricing.css";
 import { CheckIcon } from "@heroicons/react/24/solid";
 
 const Packages = () => {
@@ -24,10 +23,10 @@ const Packages = () => {
 
 	packages.forEach((object, index) => {
 		packagesList.push(
-			<div key={index} className="package">
+			<div key={index} className="package-item flex flex-col gap-y-8 w-full">
 				<div className="description">
-					<h4 className="small-caps">{object.title}</h4>
-					<p>{object.text}</p>
+					<h4 className="small-caps my-4">{object.title}</h4>
+					<p className="my-4">{object.text}</p>
 				</div>
 				<ul>
 					{object.list.map((item, index) => (
@@ -41,12 +40,14 @@ const Packages = () => {
 	});
 
 	return (
-		<section className="Packages max-w narrow">
-			<div className="section-header">
-				<p className="small-caps">Packages</p>
-				<h2>Choose the right service for you.</h2>
+		<section className="Packages py-36">
+			<div className="max-w narrow flex flex-col gap-y-36">
+				<div className="section-header">
+					<p className="small-caps">Packages</p>
+					<h2>Choose the right package for your brand.</h2>
+				</div>
+				<div className="packages-list flex flex-row gap-x-12 md:gap-x-20">{packagesList}</div>
 			</div>
-			<div className="packages">{packagesList}</div>
 		</section>
 	);
 };
