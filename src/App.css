@@ -43,3 +43,11 @@ Header {
 		line-height: 1.2em;
 	}
 }
+
+.packages-list {
+	border-top: 1px solid var(--text-color);
+
+	.package-item {
+		border-bottom: 1px solid var(--text-color);
+	}
+}
