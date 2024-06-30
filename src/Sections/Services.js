@@ -35,7 +35,7 @@ const Services = () => {
 	return (
 		<section className="Services bg-1 pt-16">
 			<Marquee text="Service Service Service Service Service Service Service Service Service" />
-			<div className="services-group max-w narrow pt-36 grid pb-16 sm:grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-12 md:gap-x-20">{serviceList}</div>
+			<div className="services-group max-w narrow pt-36 grid pb-16 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-12 md:gap-x-20">{serviceList}</div>
 			<Parallax src="./contact.jpg" />
 		</section>
 	);

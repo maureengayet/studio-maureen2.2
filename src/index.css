@@ -10,21 +10,21 @@
 
 	/* Colors */
 	--color-light: #fbfaf4;
-	--color-white: #ffffff;
 	--color-dark: #00272b;
-	--color-dark-2: #032b30;
-	--color-purple: #a23b91;
-	--color-light-green: #e8ecd2;
-	--color-green: #97d7c0;
-	--color-pink: #e7cdd5;
-	--color-dark-green: #342a06;
+	--color-dark: #0f1314;
+	--color-dark-light: #023035;
+	--color-dark-light: #23220c;
+	--color-purple-light: #decde9;
+	--color-purple: #c49bde;
+	--color-beige: #f1ece4;
+	--color-green: #7ae1bc;
 
 	/* Light mode colors */
 	--bg-color: var(--color-light);
-	--bg-color-1: var(--color-pink);
-	--bg-color-2: var(--color-light-green);
+	--bg-color-1: var(--color-beige);
+	--bg-color-2: var(--color-purple-light);
 	--text-color: var(--color-dark);
-	--text-accent: var(--color-light-green);
+	--text-accent: var(--color-purple);
 
 	@media screen and (max-width: 1000px) {
 		--padding-x: 30px;
@@ -45,10 +45,10 @@
 [data-theme="dark"] {
 	/* Dark mode colors */
 	--bg-color: var(--color-dark);
-	--bg-color-1: var(--color-green);
+	--bg-color-1: var(--color-dark-light);
 	--bg-color-2: var(--color-purple);
 	--text-color: var(--color-light);
-	--text-accent: var(--color-purple);
+	--text-accent: var(--color-green);
 }
 
 @layer components {
