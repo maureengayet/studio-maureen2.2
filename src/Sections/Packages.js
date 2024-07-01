@@ -44,7 +44,7 @@ const Packages = () => {
             Choose the right package for your brand.
           </h2>
         </div>
-        <div className="package-container max-w">
+        <div className="package-container fade-in max-w">
           <div className="packages-list overflow-hidden flex flex-col">
             {packages.map((pkg, index) => (
               <div key={index} className="package-item flex flex-col w-full">

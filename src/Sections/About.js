@@ -1,8 +1,9 @@
 import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
 
 const About = () => {
+
 	return (
-		<section className="About relative max-w  w-full ">
+		<section className="About relative max-w  w-full fade-in">
 			<p className="serif narrow mt-32 text-2xl sm:text-3xl lg:text-4xl leading-snug lg:leading-snug md:w-11/12">
 				Hi there! I'm Maureen Gayet, an experienced freelance developer dedicated to creating innovative web and mobile solutions. With over 8 years
 				of expertise, I specialize in crafting high-quality, user-friendly applications tailored to meet your unique needs. Whether you're a startup

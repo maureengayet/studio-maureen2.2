@@ -6,7 +6,7 @@ const Work = () => {
 				<h4 className="serif text-5xl py-20 w-full">Work</h4>
 			</div>
 
-			<div className="project mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
+			<div className="project fade-in mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
 				<h4 className="small-caps md:w-5/12 lg:w-3/12">Voltact</h4>
 				<div className="project-content w-full flex flex-col gap-y-3">
 					<p className="md:w-8/12 lg:w-5/12  ">
@@ -29,7 +29,7 @@ const Work = () => {
 				</div>
 			</div>
 
-			<div className="project mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
+			<div className="project fade-in mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
 				<h4 className="small-caps md:w-5/12 lg:w-3/12">Melano Jewelry</h4>
 				<div className="project-content w-full flex flex-col gap-y-3">
 					<p className="md:w-8/12 lg:w-5/12  ">
@@ -51,7 +51,7 @@ const Work = () => {
 				</div>
 			</div>
 
-			<div className="project mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
+			<div className="project fade-in mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
 				<h4 className="small-caps md:w-5/12 lg:w-3/12">Shop Ateljé</h4>
 				<div className="project-content w-full flex flex-col gap-y-3">
 					<p className="md:w-8/12 lg:w-5/12 ">
@@ -74,7 +74,7 @@ const Work = () => {
 				</div>
 			</div>
 
-			<div className="project mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
+			<div className="project fade-in mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
 				<h4 className="small-caps md:w-5/12 lg:w-3/12">Day Zero</h4>
 				<div className="project-content w-full flex flex-col gap-y-3">
 					<p className="md:w-8/12 lg:w-5/12  ">Designed the visual interface and icon for Day Zero.</p>
@@ -86,7 +86,7 @@ const Work = () => {
 				</div>
 			</div>
 
-			<div className="project mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
+			<div className="project fade-in mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
 				<h4 className="small-caps md:w-5/12 lg:w-3/12">Alfa Laval</h4>
 				<div className="project-content w-full flex flex-col gap-y-3">
 					<p className="md:w-8/12 lg:w-5/12  ">

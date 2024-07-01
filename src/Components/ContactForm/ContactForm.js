@@ -8,7 +8,7 @@ function Contact() {
 		return <p className="form-thanks">Thank you! I'll get back to you as soon as possible.</p>;
 	}
 	return (
-		<form onSubmit={handleSubmit}>
+		<form onSubmit={handleSubmit} className="fade-in">
 			<div className="form-name">
 				<div className="firstname">
 					<label className="required" htmlFor="name">Name</label>
