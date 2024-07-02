@@ -1,8 +1,9 @@
 import { styles } from "./Intro.css";
+import React, { useState, useEffect } from "react";
 
-const Intro = () => {
+const Intro = () => {	
 	return (
-		<section className="intro-video fade-in-layout wide">
+		<section className="intro-video fade-in-layout wide ">
 			<video id="background-video" autoPlay loop muted>
 				<source src="./video3.mp4" type="video/mp4"></source>
 			</video>

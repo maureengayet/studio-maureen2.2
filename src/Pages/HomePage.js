@@ -10,7 +10,7 @@ const HomePage = () => {
 		<section className="">
 			<Intro />
 			<About />
-			<Services />
+			{/* <Services /> */}
 			<Work />
 			<Packages />
 			<Contact />

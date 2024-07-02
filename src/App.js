@@ -2,26 +2,27 @@ import "./App.css";
 import Header from "./Sections/Header";
 import Footer from "./Sections/Footer";
 import React, { useState, useEffect } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 function App() {
-	const [showLayout, setShowLayout] = useState(false);
+    const [showLayout, setShowLayout] = useState(false);
+    const location = useLocation();
 
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			setShowLayout(true);
-		}, 500);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowLayout(true);
+        }, 500);
 
-		return () => clearTimeout(timer);
-	}, []);
+        return () => clearTimeout(timer);
+    }, []);
 
-	useEffect(() => {
+    useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        //observer.unobserve(entry.target);
+                        observer.unobserve(entry.target);
                     }
                 });
             },
@@ -34,15 +35,15 @@ function App() {
         return () => {
             elements.forEach((element) => observer.unobserve(element));
         };
-    }, []);
+    }, [location]);
 
-	return (
-		<div className={`App ${showLayout ? "show-layout" : ""}`}>
-			<Header />
-			<Outlet></Outlet>
-			<Footer />
-		</div>
-	);
+    return (
+        <div className={`App ${showLayout ? "show-layout" : ""}`}>
+            <Header />
+            <Outlet />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
