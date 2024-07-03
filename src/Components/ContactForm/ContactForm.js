@@ -8,10 +8,12 @@ function Contact() {
 		return <p className="form-thanks">Thank you! I'll get back to you as soon as possible.</p>;
 	}
 	return (
-		<form onSubmit={handleSubmit} className="fade-in">
+		<form onSubmit={handleSubmit}>
 			<div className="form-name">
 				<div className="firstname">
-					<label className="required" htmlFor="name">Name</label>
+					<label className="required" htmlFor="name">
+						Name
+					</label>
 					<input id="firstname" type="firstname" required name="firstname" />
 					<p className="text-sm">First name</p>
 					<ValidationError prefix="firstname" field="firstname" errors={state.errors} />

@@ -9,8 +9,12 @@
 	position: relative;
 	border-radius: var(--border-radius);
 	overflow: hidden;
-	color: var(--color-dark);
+	color: var(--text-accent);
 	line-height: 1.1em;
+	background-image: url("./../../public/bg.png");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 
 	h1 {
 		font-size: calc(40px + 2.4vw);
