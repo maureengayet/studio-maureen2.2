@@ -22,15 +22,15 @@ const Intro2 = () => {
 	}, []);
 
 	return (
-		<section id="parallax" className="intro fade-in-layout" ref={parallaxRef}>
+		<section id="parallax" className="intro wide fade-in-layout" ref={parallaxRef}>
 			<div className="background-image" style={{ transform: `translateY(${scrolled * 0.5}px)` }}></div>
 			{/* <div className="flex flex-col"> */}
 			<h1 className="max-w narrow select-none">
-				Bespoke <span className="italic">development</span> <span className="new-line">for </span>unique <span className="italic">frontend</span>{" "}
+				Bespoke <span className="italic new-line">development</span> for unique <span className="italic">frontend</span>{" "}
 				solutions.
 			</h1>
 			<h2 className="max-w narrow select-none">
-				Crafting exceptional digital <span className="new-line">experiences</span> to elevate your brand.
+				Crafting exceptional digital experiences to elevate your brand.
 			</h2>
 			{/* </div> */}
 		</section>

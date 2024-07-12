@@ -86,7 +86,7 @@ const Work = () => {
 				</div>
 			</div>
 
-			<div className="project fade-in mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
+			{/* <div className="project fade-in mb-10 md:mb-20 flex flex-col gap-y-6 gap-x-4 md:flex-row">
 				<h4 className="small-caps md:w-5/12 lg:w-3/12">Alfa Laval</h4>
 				<div className="project-content w-full flex flex-col gap-y-3">
 					<p className="md:w-8/12 lg:w-5/12  ">
@@ -99,9 +99,8 @@ const Work = () => {
 						<li className="py-1 px-2 bg-2 text-xs rounded">Angular</li>
 						<li className="py-1 px-2 bg-2 text-xs rounded">Frontend Development</li>
 					</ul>
-					<div className="images grid">{/* <img src="./melano.jpeg" alt="Melano" className="rounded-2xl w-7/12" /> */}</div>
 				</div>
-			</div>
+			</div> */}
 		</section>
 	);
 };

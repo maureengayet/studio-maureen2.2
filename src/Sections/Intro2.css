@@ -1,13 +1,13 @@
 #parallax {
 	overflow: hidden;
 	height: calc(100vh - (70px + 40px));
-	/* background-image: url("./../../public/bg.png"); */
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	row-gap: 20px;
 	border-radius: 16px;
+	background-color: #35222261;
 
 	.background-image {
 		position: absolute;
@@ -19,21 +19,23 @@
 		background-size: cover;
 		background-position: center;
 		z-index: -1;
-		background-color: red;
+		
 	}
 
 	h1 {
-		font-size: calc(40px + 2.4vw);
+		text-align: center;
+		font-size: calc(57px + 2.4vw);
 		line-height: 1.1em;
 		font-family: var(--font-serif);
 		color: var(--text-accent);
 	}
 
 	h2 {
-		margin-top: 0.5em;
-		font-size: calc(30px + 1.1vw);
-		line-height: 1.2em;
+		margin-top: 0.2em;
+		font-size: calc(24px + 1.1vw);
+		line-height: 1.3em;
 		font-family: var(--font-serif);
 		color: var(--text-accent);
+		text-align: center;
 	}
 }
