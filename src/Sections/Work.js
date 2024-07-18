@@ -2,7 +2,7 @@ const Work = () => {
 	return (
 		<section className="Work max-w narrow mb-20">
 			<div className="project flex flex-col gap-y-6 gap-x-4 md:flex-row">
-				<h4 className="small-caps md:w-5/12 lg:w-3/12"></h4>
+				<div className="small-caps md:w-5/12 lg:w-3/12"></div>
 				<h4 className="serif text-5xl py-20 w-full">Work</h4>
 			</div>
 
@@ -15,7 +15,7 @@ const Work = () => {
 					</p>
 					<p className="md:w-8/12 lg:w-5/12  ">
 						See project{" "}
-						<a href="https://voltact.nl" target="_blank">
+						<a href="https://voltact.nl" rel="noreferrer" target="_blank">
 							<span className="underline">here</span>
 						</a>
 						.
@@ -38,7 +38,7 @@ const Work = () => {
 					</p>
 					<p className="md:w-8/12 lg:w-5/12  ">
 						See project{" "}
-						<a href="https://melano-jewelry.com/" target="_blank">
+						<a href="https://melano-jewelry.com/" rel="noreferrer" target="_blank">
 							<span className="underline">here</span>
 						</a>
 						.
@@ -61,7 +61,7 @@ const Work = () => {
 					</p>
 					<p className="md:w-8/12 lg:w-5/12  ">
 						See project{" "}
-						<a href="https://shopatelje.com/" target="_blank">
+						<a href="https://shopatelje.com/" rel="noreferrer" target="_blank">
 							<span className="underline">here</span>
 						</a>
 						.

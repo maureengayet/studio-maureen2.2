@@ -1,5 +1,5 @@
+import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
-import { styles } from "./Header.css";
 import ToggleMode from "../Components/ToggleMode/ToggleMode";
 
 const Header = () => {

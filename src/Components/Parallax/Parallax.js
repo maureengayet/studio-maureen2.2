@@ -3,8 +3,8 @@ import "./Parallax.css"; // Ensure you have this CSS file for styling
 
 const Parallax = ({ src }) => {
 	const parallaxRef = useRef(null);
-	const [imageHeight, setImageHeight] = useState(0);
-	const [imageWidth, setImageWidth] = useState(0);
+	const [setImageHeight] = useState(0);
+	const [setImageWidth] = useState(0);
 	const [divAspectRatio, setDivAspectRatio] = useState(1); // Default aspect ratio is 1:1
 
 	useEffect(() => {

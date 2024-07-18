@@ -6,8 +6,12 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ContactPage from "./Pages/ContactPage";
 import HomePage from "./Pages/HomePage";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-MYQR3G9J4R");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SunIcon } from "@heroicons/react/24/outline";
 import { MoonIcon } from "@heroicons/react/24/solid";
-import { styles } from "./ToggleMode.css";
+import "./ToggleMode.css";
 
 const ToggleMode = () => {
 	const [isDark, setIsDark] = useState(false);
