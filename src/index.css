@@ -9,7 +9,7 @@
 	--font-serif: "Ethic Serif", serif;
 
 	/* Colors */
-	--color-light: #fbfaf4;
+	/* --color-light: #fbfaf4;
 	--color-dark: #00272b;
 	--color-dark: #0f1314;
 	--color-dark-light: #023035;
@@ -17,7 +17,7 @@
 	--color-purple-light: #decde9;
 	--color-purple: #c49bde;
 	--color-beige: #f1ece4;
-	--color-green: #7ae1bc;
+	--color-green: #7ae1bc; */
 
 	/* Light mode colors */
 	--bg-color: var(--color-light);
