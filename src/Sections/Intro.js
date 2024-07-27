@@ -1,17 +1,16 @@
 import "./Intro.css";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Intro = () => {
 	return (
-		<section className="intro-video wide fade-in-layout wide ">
-			<h1 className="max-w narrow select-none">
-				Bespoke <span className="italic">development</span> <span className="new-line">for </span>unique <span className="italic">frontend</span>{" "}
-				solutions.
+		<section className="wide fade-in-layout wide h-svh">
+			<h1 className="serif text-9xl">
+				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 1 }}>
+					Bespoke <span className="italic">development</span> for <span className="italic">unique</span> front-end solutions. Crafting digital
+					solutions to <span className="italic">elevate</span> your brand.
+				</motion.div>
 			</h1>
-			<h2 className="max-w narrow select-none">
-				Crafting exceptional digital <span className="new-line">experiences</span> to elevate your brand.
-			</h2>
-			{/* <p className="narrow text-base font-bold  select-none">A selection of work done between 2019—2024.</p> */}
 		</section>
 	);
 };

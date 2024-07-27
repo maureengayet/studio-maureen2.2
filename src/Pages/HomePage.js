@@ -1,4 +1,4 @@
-import Intro2 from "./../Sections/Intro2";
+import Intro from "./../Sections/Intro";
 import About from "../Sections/About";
 import Work from "./../Sections/Work";
 import Packages from "../Sections/Packages";
@@ -10,8 +10,7 @@ ReactGA.send({ hitType: "pageview", page: "/home", title: "Homepage" });
 const HomePage = () => {
 	return (
 		<section className="home">
-			{/* <Intro></Intro> */}
-			<Intro2 />
+			<Intro />
 			<About />
 			{/* <Services /> */}
 			<Packages />
