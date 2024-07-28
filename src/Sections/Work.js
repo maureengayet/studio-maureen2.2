@@ -1,7 +1,7 @@
 const Work = () => {
 	return (
-		<section className="bg-1 py-32">
-			<div class="max-w wide">
+		<section className="bg-1 py-24">
+			<div class="max-w w-full">
 				<h3 className="text-8xl serif">Selected Work</h3>
 				<div className="preview">
 					<div className="preview-img"></div>

@@ -7,49 +7,39 @@
 :root {
 	--border-radius: 14px;
 	--font-serif: "Ethic Serif", serif;
-	--font-size-huge: calc((110 / var(--base-font-size)) * 1rem);
-	--base-font-size: 16;
+	--font-size-huge: calc((80 / 16) * 1rem);
+	--font-size-small: .75rem;
 
 	/* Colors */
 	--color-white: #fff;
 	--color-beige: #f2f0ec;
-	--color-green: #00272b;
-	--color-green-dark: #012225;
+	--color-green: #012225;
+	--color-green-dark: #011F22;
+	--color-green-light: #dbe1df;
 	--color-purple-light: #decde9;
 	--color-purple: #c49bde;
 
 	/* Light mode colors */
 	--bg-color: var(--color-beige);
 	--bg-color-1: var(--color-white);
+	--bg-color-2: var(--color-purple-light);
 	--text-color: var(--color-green-dark);
+	--logo-fill: var(--color-green-dark);
+	--logo-text: var(--color-purple);
 	--text-accent: var(--color-purple);
-	--logo-bg: var(--color-green-dark);
-	--logo-fill: var(--color-purple);
-
-	/* @media screen and (max-width: 1000px) {
-		--padding-x: 30px;
-		--inner-padding-x: 50px;
-	}
-
-	@media screen and (max-width: 750px) {
-		--padding-x: 20px;
-		--inner-padding-x: 30px;
-	}
-
-	@media screen and (max-width: 550px) {
-		--padding-x: 10px;
-		--inner-padding-x: 20px;
-	} */
+	--bg-cards: #B0A48D;
 }
 
 [data-theme="dark"] {
 	/* Dark mode colors */
-	--bg-color: var(--color-green);
-	--bg-color-1: var(--color-dark-green);
-	--text-color: var(--color-white);
-	--text-accent: var(--color-green);
-	--logo-bg: var(--color-purple-light);
-	--logo-fill: var(--color-green-dark);
+	--bg-color: var(--color-green-dark);
+	--bg-color-1: var(--color-green);
+	--bg-color-2: var(--color-beige);
+	--text-color: var(--color-green-light);
+	--logo-fill: var(--color-purple-light);
+	--logo-text: var(--color-green-dark);
+	--text-accent: var(--color-purple-light);
+	--bg-cards: #bcb69b;
 }
 
 @layer components {
@@ -91,8 +81,17 @@
 		background-color: var(--bg-color-1);
 	}
 
+	.bg-2 {
+		background-color: var(--bg-color-2);
+	}
+
 	.text-huge {
 		font-size: var(--font-size-huge);
+		line-height: 1.2;
+	}
+
+	.text-small {
+		font-size: var(--font-size-small);
 	}
 }
 
@@ -135,5 +134,29 @@ a {
 			content: "\a";
 			white-space: pre;
 		}
+	}
+}
+
+#parallax {
+	/* border:1px solid black; */
+	overflow: hidden;
+	height: 800px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 20px;
+	border-radius: 16px;
+
+	.background-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 120%;
+		background-image: url("./../public/cards.png");
+		background-size: cover;
+		background-position: center center;
+		z-index: -1;
 	}
 }

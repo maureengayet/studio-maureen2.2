@@ -21,30 +21,30 @@ const Packages = () => {
 		},
 	];
 
-	const [openIndexes, setOpenIndexes] = useState([]);
+	const [openIndex, setOpenIndex] = useState([]);
 
 	const togglePackage = (index) => {
-		if (openIndexes.includes(index)) {
-			setOpenIndexes(openIndexes.filter((item) => item !== index));
+		if (openIndex === index) {
+			setOpenIndex(null);
 		} else {
-			setOpenIndexes([...openIndexes, index]);
+			setOpenIndex(index);
 		}
 	};
 
 	const isOpen = (index) => {
-		return openIndexes.includes(index);
+		return openIndex === index;
 	};
 
 	return (
 		<section className="bg-1 py-36">
-			<div className="package-container max-w narrow flex flex-col gap-y-36">
+			<div className="package-container max-w flex flex-col gap-y-36">
 				<div className="packages flex flex-col items-start">
 					<p className="small-caps my-4">Packages</p>
 					<h2 className="serif text-6xl leading-tight w-11/12 sm:w-10/12 md:text-7xl md:w-8/12 md:leading-tight lg:w-7/12">
 						Choose the right package for your brand.
 					</h2>
 				</div>
-				<div className="package-container fade-in max-w">
+				<div className="package-container max-w">
 					<div className="packages-list overflow-hidden flex flex-col">
 						{packages.map((pkg, index) => (
 							<div key={index} className="package-item flex flex-col w-full">
