@@ -187,9 +187,9 @@ const Work = () => {
 
     const bgPositions = {
       p1: "0 0",
-      p2: "0 250px",
-      p3: "0 500px",
-      p4: "0 750px",
+      p2: "0 33.33%",
+      p3: "0 66.66%",
+      p4: "0 100%",
     };
 
     const moveStuff = (e) => {
