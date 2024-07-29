@@ -6,6 +6,33 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 const Intro = () => {
 	return (
 		<section className="h-svh relative flex justify-center align-center">
+
+				{/* <svg className="absolute left-[-10%] animate-[spin_6s_linear_infinite]" width="945" height="774" viewBox="0 0 945 774" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g filter="url(#filter0_f_783_16)">
+				<ellipse cx="412.858" cy="387.168" rx="169.825" ry="340.507" transform="rotate(75 412.858 387.168)" fill="#D4B3E9" fill-opacity="0.4"/>
+				</g>
+				<defs>
+				<filter id="filter0_f_783_16" x="-119.01" y="0.918396" width="1063.73" height="772.499" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+				<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+				<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_783_16"/>
+				</filter>
+				</defs>
+				</svg>
+
+				<svg width="648" className="absolute" height="648" viewBox="0 0 648 648" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g filter="url(#filter0_f_783_17)">
+				<ellipse cx="324.075" cy="324.075" rx="101.564" ry="141.787" transform="rotate(-45 324.075 324.075)" fill="#D5CF43" fill-opacity="0.4"/>
+				</g>
+				<defs>
+				<filter id="filter0_f_783_17" x="0.738281" y="0.739136" width="646.672" height="646.671" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+				<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+				<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_783_17"/>
+				</filter>
+				</defs>
+				</svg> */}
+			
 			<motion.div
 				className="self-center"
 				initial={{ opacity: 0, y: 20 }}
@@ -44,6 +71,7 @@ const Intro = () => {
 				className="w-1/5 text-right flex items-end justify-end">
 					<p className="uppercase text-small small-caps">Scroll <ArrowDownCircleIcon className="size-5 inline ml-2 mb-1" /></p>
 				</motion.div>
+				
 			</div>
 		</section>
 	);

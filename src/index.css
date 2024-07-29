@@ -39,7 +39,7 @@
 	--logo-fill: var(--color-purple-light);
 	--logo-text: var(--color-green-dark);
 	--text-accent: var(--color-purple-light);
-	--bg-cards: #bcb69b;
+	--bg-cards: #a8a391;
 }
 
 @layer components {
