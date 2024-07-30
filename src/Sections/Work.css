@@ -1,5 +1,6 @@
 .work {
     position: relative;
+    box-sizing: border-box;
 
     .preview {
         position: fixed;
@@ -24,6 +25,11 @@
     
     .work-container {
         .projects {   
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
             .project {
                 display: flex;
                justify-content: space-between;
