@@ -6,42 +6,18 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 const Intro = () => {
   return (
     <section className="h-svh relative flex justify-center align-center">
-      {/* <svg className="absolute left-[-10%] animate-[spin_6s_linear_infinite]" width="945" height="774" viewBox="0 0 945 774" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<g filter="url(#filter0_f_783_16)">
-				<ellipse cx="412.858" cy="387.168" rx="169.825" ry="340.507" transform="rotate(75 412.858 387.168)" fill="#D4B3E9" fill-opacity="0.4"/>
-				</g>
-				<defs>
-				<filter id="filter0_f_783_16" x="-119.01" y="0.918396" width="1063.73" height="772.499" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-				<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-				<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_783_16"/>
-				</filter>
-				</defs>
-				</svg>
-
-				<svg width="648" className="absolute" height="648" viewBox="0 0 648 648" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<g filter="url(#filter0_f_783_17)">
-				<ellipse cx="324.075" cy="324.075" rx="101.564" ry="141.787" transform="rotate(-45 324.075 324.075)" fill="#D5CF43" fill-opacity="0.4"/>
-				</g>
-				<defs>
-				<filter id="filter0_f_783_17" x="0.738281" y="0.739136" width="646.672" height="646.671" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-				<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-				<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-				<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_783_17"/>
-				</filter>
-				</defs>
-				</svg> */}
-				<div
-        aria-hidden="true"
-        className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-      >
-        <div
-          style={{
+				<div aria-hidden="true" className="absolute bottom-[1rem] -z-10 transform-gpu overflow-hidden blur-3xl">
+        <div style={{
             clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-          className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+              //'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+              //'polygon(5.94% 54.5%, 11.46% 54.5%, 15.79% 57.18%, 31.48% 69.78%, 30.98% 62%, 37.36% 57.07%, 45.58% 59.75%, 58.35% 67.39%, 65.45% 56.78%, 68.78% 33.5%, 72.43% 25.61%, 80.61% 22.65%, 96.43% 24.26%, 99.5% 33.5%, 99.91% 51.56%, 96.65% 62.74%, 85.22% 65%, 76.34% 53.81%, 71.78% 66.19%, 55.5% 81.75%, 39.94% 95.84%, 18.99% 94.51%, 11.25% 86.29%, 5.94% 80.65%, 1.27% 60.98%)'
+              //'polygon(5.94% 54.5%, 11.46% 54.5%, 19.31% 59.03%, 25.78% 59.03%, 23.85% 65.2%, 30.72% 68.13%, 36.1% 64.22%, 39.68% 73.47%, 46.43% 69.41%, 55.73% 69.83%, 60.25% 63.97%, 63.97% 53.68%, 71.43% 46.84%, 77.34% 33.89%, 89.02% 33.89%, 94.67% 44.11%, 92.9% 56.31%, 92.9% 63.97%, 89.82% 69.12%, 81.22% 72.76%, 70.36% 73.38%, 62.45% 69.24%, 55.5% 81.75%, 39.94% 95.84%, 18.99% 94.51%, 11.25% 86.29%, 5.94% 80.65%, 1.27% 60.98%)'
+            'polygon(5.94% 54.5%, 11.46% 54.5%, 19.31% 59.03%, 25.78% 59.03%, 23.85% 65.2%, 30.72% 68.13%, 36.1% 64.22%, 39.68% 73.47%, 46.43% 69.41%, 55.73% 69.83%, 60.25% 63.97%, 59.34% 57.67%, 66.53% 51.86%, 73.44% 47.95%, 79.28% 53.32%, 86.74% 51.86%, 92.9% 56.35%, 92.9% 63.97%, 89.82% 69.12%, 81.22% 72.76%, 70.36% 73.38%, 62.45% 69.24%, 55.5% 81.75%, 39.94% 95.84%, 18.99% 94.51%, 11.25% 86.29%, 5.94% 80.65%, 1.27% 60.98%)'
+            }}
+          className="relative left-1/2 -z-10 aspect-[1155/678] w-[120rem]  max-w-none -translate-x-1/2 rotate-[20deg] bg-gradient-to-tr from-[--gradient-1] to-[--gradient-2] opacity-[--opacity]"
         />
+
+        
       </div>
 
       <motion.div

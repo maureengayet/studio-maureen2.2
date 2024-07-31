@@ -28,6 +28,9 @@
   --logo-text: var(--color-purple);
   --text-accent: var(--color-purple);
   --bg-cards: #b0a48d;
+  --gradient-1: #894ec0;
+  --gradient-2: #d5d043be;
+  --opacity: 40%;
 }
 
 [data-theme="dark"] {
@@ -40,6 +43,9 @@
   --logo-text: var(--color-green-dark);
   --text-accent: var(--color-purple-light);
   --bg-cards: #a8a391;
+  --gradient-1: #a751f8;
+  --gradient-2: #e6e03ccb;
+  --opacity: 20%;
 }
 
 @layer components {
@@ -109,6 +115,10 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-weight: 400;
+}
+
+.home {
+  overflow: hidden;
 }
 
 .text-accent {
