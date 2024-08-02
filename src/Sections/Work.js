@@ -64,17 +64,12 @@ const Work = () => {
         if (mouseInside !== isInside) {
           isInside = mouseInside;
           if (isInside) {
-            console.log("Animating scale to 1");
-            gsap.to(previewRef, { scale: 1, duration: 0.8 });
             preview.style.opacity = 1;
           } else {
-            console.log("Animating scale to 0");
-            gsap.to(previewRef, { scale: 0, duration: 0.2 });
             preview.style.opacity = 0;
           }
         }
       }
-      console.log("Mouse move detected");
     };
 
     window.addEventListener("mousemove", moveStuff);
@@ -98,103 +93,125 @@ const Work = () => {
   }, []);
 
   return (
-    <section className="work bg-1 py-24">
-      <div className="max-w w-full">
-        <h3 className="text-8xl serif pb-24">Selected Work</h3>
+    <section className="work bg-1 py-10 sm:py-24">
+      <div className="inner-p-x">
+        <div className="max-w w-full">
+          <h3 className="text-5xl md:text-8xl serif pb-10 sm:pb-24">
+            Selected Work
+          </h3>
 
-        <div className="preview" ref={previewRef}>
-          <div className="preview-img" ref={previewImgRef}></div>
-        </div>
-
-        <div className="work-container">
-          <div id="header" className="project flex flex-row py-14">
-            <div className="client w-1/4">
-              <p className="font-semibold text-small small-caps pl-4">Client</p>
-            </div>
-			<div className="deliverables w-1/4">
-				<p className="font-semibold text-small small-caps">Deliverables</p>
-			  </div>
-            <div className="category w-1/4">
-              <p className="font-semibold text-small small-caps ">Category</p>
-            </div>
-            <div className="tools w-1/4">
-              <p className="font-semibold text-small small-caps ">Tools</p>
-            </div>
-            <div className="year w-1/12">
-              <p className="font-semibold text-small small-caps ">Year</p>
-            </div>
+          <div className="preview" ref={previewRef}>
+            <div className="preview-img" ref={previewImgRef}></div>
           </div>
-          <div className="projects" ref={projectsRef}>
-            <div className="max-w w-full h-px bg-[var(--text-color)] opacity-20"></div>
-            <div id="p1" className="project flex flex-row cursor-pointer py-12">
-              <div className="client w-1/4">
-                <p className="text-small small-caps pl-4">Voltact</p>
+
+          <div className="work-container">
+            <div id="header" className="hidden sm:flex project flex-row py-14">
+              <div className="client sm:w-1/3">
+                <p className="font-semibold text-lg sm:text-small small-caps pl-4">
+                  Client
+                </p>
               </div>
-			  <div className="deliverables w-1/4">
-				<p className="text-small small-caps ">Logo, Cards, Branding</p>
-			  </div>
-              <div className="category w-1/4">
-                <p className="text-small small-caps ">Design</p>
+              <div className="deliverables sm:w-1/3">
+                <p className="font-semibold text-lg sm:text-small small-caps">
+                  Deliverables
+                </p>
               </div>
-              <div className="tools w-1/4">
-                <p className="text-small small-caps ">Figma</p>
+              <div className="category sm:w-1/3">
+                <p className="font-semibold text-lg sm:text-small small-caps ">Category</p>
               </div>
+              {/* <div className="tools sm:w-1/3">
+              <p className="font-semibold sm:text-small small-caps ">Tools</p>
+            </div> */}
               <div className="year w-1/12">
-                <p className="text-small small-caps">2024</p>
+                <p className="font-semibold text-lg sm:text-small small-caps ">Year</p>
               </div>
             </div>
-            <div className="max-w w-full h-px bg-[var(--text-color)] opacity-20"></div>
-            <div id="p2" className="project flex flex-row cursor-pointer py-12">
-              <div className="client w-1/4">
-                <p className="text-small small-caps pl-4">Air To Ground</p>
+            <div className="projects" ref={projectsRef}>
+              <div className="hidden sm:flex max-w w-full h-px bg-[var(--text-color)] opacity-20"></div>
+              <div
+                id="p1"
+                className="project flex flex-col gap-y-2 sm:flex-row cursor-pointer py-4 sm:py-12"
+              >
+                <div className="client sm:w-1/3">
+                  <p className="sm:text-small small-caps sm:pl-4">Voltact</p>
+                </div>
+                <div className="deliverables sm:w-1/3">
+                  <p className="sm:text-small small-caps ">
+                    Logo, Cards, Branding
+                  </p>
+                </div>
+                <div className="category sm:w-1/3">
+                  <p className="sm:text-small small-caps ">Design</p>
+                </div>
+                {/* <div className="tools sm:w-1/3">
+                <p className="sm:text-small small-caps ">Figma</p>
+              </div> */}
+                <div className="year w-1/12">
+                  <p className="sm:text-small small-caps">2024</p>
+                </div>
               </div>
-			  <div className="deliverables w-1/4">
-				<p className="text-small small-caps ">Logo, Cards</p>
-			  </div>
-              <div className="category w-1/4">
-                <p className="text-small small-caps ">Design</p>
+              <div className="max-w w-full h-px bg-[var(--text-color)] opacity-20"></div>
+              <div
+                id="p2"
+                className="project flex flex-col gap-y-2 sm:flex-row cursor-pointer py-4 sm:py-12"
+              >
+                <div className="client sm:w-1/3">
+                  <p className="sm:text-small small-caps sm:pl-4">Air To Ground</p>
+                </div>
+                <div className="deliverables sm:w-1/3">
+                  <p className="sm:text-small small-caps ">Logo, Cards</p>
+                </div>
+                <div className="category sm:w-1/3">
+                  <p className="sm:text-small small-caps ">Design</p>
+                </div>
+                {/* <div className="tools sm:w-1/3">
+                <p className="sm:text-small small-caps ">Figma</p>
+              </div> */}
+                <div className="year w-1/12">
+                  <p className="sm:text-small small-caps ">2023</p>
+                </div>
               </div>
-              <div className="tools w-1/4">
-                <p className="text-small small-caps ">Figma</p>
+              <div className="max-w w-full h-px bg-[var(--text-color)] opacity-20"></div>
+              <div
+                id="p3"
+                className="project flex flex-col gap-y-2 sm:flex-row cursor-pointer py-4 sm:py-12"
+              >
+                <div className="client sm:w-1/3">
+                  <p className="sm:text-small small-caps sm:pl-4">Melano Jewelry</p>
+                </div>
+                <div className="deliverables sm:w-1/3">
+                  <p className="sm:text-small small-caps ">Shopify Theme</p>
+                </div>
+                <div className="category sm:w-1/3">
+                  <p className="sm:text-small small-caps">Development</p>
+                </div>
+                {/* <div className="tools sm:w-1/3">
+                <p className="sm:text-small small-caps ">Liquid</p>
+              </div> */}
+                <div className="year w-1/12">
+                  <p className="sm:text-small small-caps">2022</p>
+                </div>
               </div>
-              <div className="year w-1/12">
-                <p className="text-small small-caps ">2023</p>
-              </div>
-            </div>
-            <div className="max-w w-full h-px bg-[var(--text-color)] opacity-20"></div>
-            <div id="p3" className="project flex flex-row cursor-pointer py-12">
-              <div className="client w-1/4">
-                <p className="text-small small-caps pl-4">Melano Jewelry</p>
-              </div>
-			  <div className="deliverables w-1/4">
-				<p className="text-small small-caps ">Shopify Theme</p>
-			  </div>
-              <div className="category w-1/4">
-                <p className="text-small small-caps">Development</p>
-              </div>
-              <div className="tools w-1/4">
-                <p className="text-small small-caps ">Liquid</p>
-              </div>
-              <div className="year w-1/12">
-                <p className="text-small small-caps">2022</p>
-              </div>
-            </div>
-            <div className="max-w w-full h-px bg-[var(--text-color)] opacity-20"></div>
-            <div id="p4" className="project flex flex-row cursor-pointer py-12">
-              <div className="client w-1/4">
-                <p className="text-small small-caps pl-4">Shop Ateljé</p>
-              </div>
-			  <div className="deliverables w-1/4">
-				<p className="text-small small-caps">Shopify Theme</p>
-			  </div>
-              <div className="category w-1/4">
-                <p className="text-small small-caps">Development</p>
-              </div>
-              <div className="tools w-1/4">
-                <p className="text-small small-caps ">Liquid</p>
-              </div>
-              <div className="year w-1/12">
-                <p className="text-small small-caps">2022</p>
+              <div className="max-w w-full h-px bg-[var(--text-color)] opacity-20"></div>
+              <div
+                id="p4"
+                className="project flex flex-col gap-y-2 sm:flex-row cursor-pointer py-4 sm:py-12"
+              >
+                <div className="client sm:w-1/3">
+                  <p className="sm:text-small small-caps sm:pl-4">Shop Ateljé</p>
+                </div>
+                <div className="deliverables sm:w-1/3">
+                  <p className="sm:text-small small-caps">Shopify Theme</p>
+                </div>
+                <div className="category sm:w-1/3">
+                  <p className="sm:text-small small-caps">Development</p>
+                </div>
+                {/* <div className="tools sm:w-1/3">
+                <p className="sm:text-small small-caps ">Liquid</p>
+              </div> */}
+                <div className="year w-1/12">
+                  <p className="sm:text-small small-caps">2022</p>
+                </div>
               </div>
             </div>
           </div>
