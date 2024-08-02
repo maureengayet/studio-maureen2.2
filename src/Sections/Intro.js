@@ -55,12 +55,12 @@ const Intro = () => {
           >
             <h3 className="font-semibold text-small small-caps">Contact</h3>
             <p link="/contact" className="uppercase text-small small-caps">
-              <a href="mailto:maureen@studio-maureen.com">Email us </a>
+              <a href="mailto:maureen@studio-maureen.com" >Email us </a>
               <ClipboardIcon className="size-3 inline ml-1 mb-1" />
             </p>
 
             <p className="uppercase text-small small-caps">
-              <a target="_blank" href="http://instagram.com/studio__maureen">
+              <a target="_blank" href="http://instagram.com/studio__maureen" rel="noreferrer">
                 @Studio__Maureen
               </a>{" "}
               <ArrowUpRightIcon className="size-3 inline ml-1 mb-1" />
