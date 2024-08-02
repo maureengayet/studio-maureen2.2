@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import "./Work.css";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -93,7 +92,7 @@ const Work = () => {
   }, []);
 
   return (
-    <section className="work bg-1 py-10 sm:py-24">
+    <section id="work" className="bg-1 py-10 sm:py-24">
       <div className="inner-p-x">
         <div className="max-w w-full">
           <h3 className="text-5xl md:text-8xl serif pb-10 sm:pb-24">
@@ -117,13 +116,17 @@ const Work = () => {
                 </p>
               </div>
               <div className="category sm:w-1/3">
-                <p className="font-semibold text-lg sm:text-small small-caps ">Category</p>
+                <p className="font-semibold text-lg sm:text-small small-caps ">
+                  Category
+                </p>
               </div>
               {/* <div className="tools sm:w-1/3">
               <p className="font-semibold sm:text-small small-caps ">Tools</p>
             </div> */}
               <div className="year w-1/12">
-                <p className="font-semibold text-lg sm:text-small small-caps ">Year</p>
+                <p className="font-semibold text-lg sm:text-small small-caps ">
+                  Year
+                </p>
               </div>
             </div>
             <div className="projects" ref={projectsRef}>
@@ -156,7 +159,9 @@ const Work = () => {
                 className="project flex flex-col gap-y-2 sm:flex-row cursor-pointer py-4 sm:py-12"
               >
                 <div className="client sm:w-1/3">
-                  <p className="sm:text-small small-caps sm:pl-4">Air To Ground</p>
+                  <p className="sm:text-small small-caps sm:pl-4">
+                    Air To Ground
+                  </p>
                 </div>
                 <div className="deliverables sm:w-1/3">
                   <p className="sm:text-small small-caps ">Logo, Cards</p>
@@ -177,7 +182,9 @@ const Work = () => {
                 className="project flex flex-col gap-y-2 sm:flex-row cursor-pointer py-4 sm:py-12"
               >
                 <div className="client sm:w-1/3">
-                  <p className="sm:text-small small-caps sm:pl-4">Melano Jewelry</p>
+                  <p className="sm:text-small small-caps sm:pl-4">
+                    Melano Jewelry
+                  </p>
                 </div>
                 <div className="deliverables sm:w-1/3">
                   <p className="sm:text-small small-caps ">Shopify Theme</p>
@@ -198,7 +205,9 @@ const Work = () => {
                 className="project flex flex-col gap-y-2 sm:flex-row cursor-pointer py-4 sm:py-12"
               >
                 <div className="client sm:w-1/3">
-                  <p className="sm:text-small small-caps sm:pl-4">Shop Ateljé</p>
+                  <p className="sm:text-small small-caps sm:pl-4">
+                    Shop Ateljé
+                  </p>
                 </div>
                 <div className="deliverables sm:w-1/3">
                   <p className="sm:text-small small-caps">Shopify Theme</p>
