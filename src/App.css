@@ -43,16 +43,25 @@
 
 
 #intro {
-  .intro-bg {
-    position: absolute;
-
-    .bg-shape {
-      position: absolute;
-    }
-  }
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -10;
+		width: 100%;
+		height: calc(100vh + 50vh);
+		position: absolute;
+		background-image: url('./../public/bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: visible;
+		background-position: -20vw center;
+		opacity: var(--opacity);
+	}
+	
 
   h1 {
-    line-height: 1.2;
+    line-height: 1.15;
   }
 }
 

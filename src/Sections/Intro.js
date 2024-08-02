@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
-import { ArrowLongDownIcon } from "@heroicons/react/24/outline";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import { ClipboardIcon } from "@heroicons/react/24/outline";
 
 const Intro = () => {
   return (
@@ -9,7 +9,8 @@ const Intro = () => {
       id="intro"
       className="h-[700px] sm:h-svh relative flex justify-center align-center"
     >
-      <div aria-hidden="true" className="intro-bg blur-3xl">
+      <div className="bg"></div>
+      {/* <div aria-hidden="true" className="intro-bg blur-3xl">
         <div
           style={{
             clipPath:
@@ -17,13 +18,13 @@ const Intro = () => {
           }}
           className="bg-shape w-[200vw] md:w-[100vw] top-[20vh] left-[-80vw] md:left-[-60vw] sm:top-[0] md:top-[45vh] lg:top-[-10vh] rotate-[20deg] -z-10 aspect-[1155/678] bg-gradient-to-tr from-[--gradient-1] to-[--gradient-2] opacity-[--opacity]"
         />
-      </div>
+      </div> */}
 
       <motion.div
         className="self-center max-w-[80%]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 1 }}
+        transition={{ delay: 0.8, duration: 0.5 }}
       >
         <h1 className="serif text-huge text-center mt-[-8vh] md:mt-[-2vh] text-[2.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[4.8rem] xl:text-[5.4rem] 2xl:text-[6.5rem]">
           Bespoke <span className="italic">development</span>{" "}
@@ -34,13 +35,13 @@ const Intro = () => {
           <span className="italic">elevate</span> your brand.
         </h1>
       </motion.div>
-      <div className="intro-footer inner-p-x max-w w-full wide absolute bottom-4 flex justify-between gap-y-4 flex-col sm:flex-row">
+      <div className="intro-footer inner-p-x max-w w-full wide absolute bottom-4 sm:bottom-10 flex justify-between gap-y-4 flex-col sm:flex-row">
         <div className="flex grow">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 1 }}
-            className="w-1/2 sm:w-1/3 m:w-1/4"
+            transition={{ delay: 1.2, duration: 0.5 }}
+            className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4"
           >
             <h3 className="font-semibold text-small small-caps">Current</h3>
             <p className="text-small small-caps">Available for Work</p>
@@ -49,12 +50,13 @@ const Intro = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.7, duration: 1 }}
-            className="w-1/2 sm:w-1/3 m:w-1/4"
+            transition={{ delay: 1.7, duration: 0.5 }}
+            className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4"
           >
             <h3 className="font-semibold text-small small-caps">Contact</h3>
             <p link="/contact" className="uppercase text-small small-caps">
-              Email Us <ArrowUpRightIcon className="size-3 inline ml-1 mb-1" />
+              <a href="mailto:maureen@studio-maureen.com">Email us </a>
+              <ClipboardIcon className="size-3 inline ml-1 mb-1" />
             </p>
 
             <p className="uppercase text-small small-caps">
@@ -68,11 +70,11 @@ const Intro = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2.2, duration: 1 }}
-          className="w-full sm:w-1/5 text-right flex items-end sm:justify-end"
+          transition={{ delay: 2.2, duration: 0.5 }}
+          className="hidden sm:flex sm:w-1/5 text-right flex items-end sm:justify-end"
         >
           <p className="uppercase text-small small-caps">
-          <ArrowDownCircleIcon className="size-5 inline mr-2 mb-1" /> Scroll 
+            <ArrowDownCircleIcon className="size-5 inline mr-2 mb-1" /> Scroll
           </p>
         </motion.div>
       </div>

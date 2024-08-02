@@ -27,9 +27,7 @@
   --logo-text: var(--color-purple);
   --text-accent: var(--color-purple);
   --bg-cards: #b0a48d;
-  --gradient-1: #894ec0;
-  --gradient-2: #d5d043be;
-  --opacity: 30%;
+  --opacity: 100%;
 }
 
 [data-theme="dark"] {
@@ -42,9 +40,7 @@
   --logo-text: var(--color-green-dark);
   --text-accent: var(--color-purple-light);
   --bg-cards: #a8a391;
-  --gradient-1: #a751f8;
-  --gradient-2: #e6e03ccb;
-  --opacity: 20%;
+  --opacity: 90%;
 }
 
 @layer components {

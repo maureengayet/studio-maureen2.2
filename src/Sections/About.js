@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 const About = () => {
   return (
-    <section className="relative max-w w-full leading-snug lg:leading-snug">
+    <section id="about" className="relative max-w w-full leading-snug lg:leading-snug">
       <div className="max-w w-full h-px mt-10 sm:mt-24 bg-[var(--color-white)] opacity-30"></div>
       <div className="flex flex-col sm:flex-row gap-y-10 my-10 sm:my-24 inner-p-x">
         <div className="small-caps text-small w-1/5 font-semibold">
@@ -23,8 +23,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="wide"><img
-        className="transition-colors rounded-2xl mb-10 sm:mb-24 bg-[--bg-cards]"
+      <div className="img wide relative overflow-hidden h-[500px] md:h-[750px] lg:h-[850px] b-10 sm:mb-24" ><img
+        className="transition-colors rounded-2xl 4 bg-[--bg-cards] absolute inset-0 object-cover h-full w-full"
         src="./cards.png"
         alt="Studio Maureen Cards"
       /></div>
