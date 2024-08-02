@@ -104,7 +104,7 @@ const Work = () => {
           </div>
 
           <div className="work-container">
-            <div id="header" className="hidden sm:flex project flex-row py-14">
+            <div className="hidden sm:flex project flex-row py-14">
               <div className="client sm:w-1/3">
                 <p className="font-semibold text-lg sm:text-small small-caps pl-4">
                   Client

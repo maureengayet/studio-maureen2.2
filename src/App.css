@@ -1,80 +1,58 @@
-.section-header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  row-gap: 20px;
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: sticky;
+	align-items: center;
+	top: 0;
+	z-index: 50;
+	height: 70px;
+	margin-bottom: -70px;
 
-  p {
-    letter-spacing: 0, 025em;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
+	nav {
+		display: flex;
+		flex-direction: row;
+		column-gap: 40px;
+		align-items: center;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 2em;
-    font-family: var(--font-serif);
-    line-height: 1.2em;
-  }
+		p {
+			position: relative;
+
+			::after {
+				display: block;
+				width: 100%;
+				height: 2px;
+				content: " ";
+				bottom: -20px;
+				background-color: var(--text-accent);
+				width: 0;
+				transition: 0.2s ease-in-out;
+				position: absolute;
+				bottom: -4px;
+			}
+
+			&.current,
+			&:hover {
+				::after {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
-.packages-list {
-  border-top: 1px solid var(--text-color);
-
-  .package-item {
-    border-bottom: 1px solid var(--text-color);
-  }
-}
 
 #intro {
   .intro-bg {
     position: absolute;
-    /* top: 0;
-		left: 0;
-		height: 100svh;
-		width: 100svw;
-		filter: blur(50px);
-		z-index: -10; */
 
     .bg-shape {
       position: absolute;
-      /* top: calc(50% - 35svh);
-			left: calc(50% - 50svw); */
     }
   }
 
   h1 {
     line-height: 1.2;
-  }
-}
-
-#parallax {
-  /* border:1px solid black; */
-  overflow: hidden;
-  height: 840px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 20px;
-  border-radius: 16px;
-
-  .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120%;
-    background-image: url("./../public/cards.png");
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
   }
 }
 
@@ -91,7 +69,7 @@
     .preview-img {
       width: 100%;
       height: 100%;
-      background: url("./../../public/sprite.png");
+      background: url("./../public/sprite.png");
       background-size: 300px;
       background-position: 0 0;
       pointer-events: none;

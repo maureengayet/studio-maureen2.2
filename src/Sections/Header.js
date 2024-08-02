@@ -1,4 +1,3 @@
-import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
 import ToggleMode from "../Components/ToggleMode/ToggleMode";
 
@@ -36,7 +35,7 @@ const Header = () => {
 	));
 
 	return (
-		<header className="App-header fade-in-layout wide">
+		<header id="header" className="wide">
 			<Link className="Home-link" to="/" onClick={() => scrollToTop("/")}>
 				<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect width="40" height="40" rx="20" fill="var(--logo-fill)" />

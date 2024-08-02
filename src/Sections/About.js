@@ -1,26 +1,6 @@
-import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
-import { motion } from "framer-motion";
 import React, { useState, useEffect, useRef } from "react";
 
 const About = () => {
-  const [scrolled, setScrolled] = useState(0);
-  const parallaxRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setScrolled(scrollTop);
-    };
-
-    // Event listener to track scroll position
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <section className="relative max-w w-full leading-snug lg:leading-snug">
       <div className="max-w w-full h-px mt-10 sm:mt-24 bg-[var(--color-white)] opacity-30"></div>
@@ -48,13 +28,6 @@ const About = () => {
         src="./cards.png"
         alt="Studio Maureen Cards"
       /></div>
-      
-      {/* <section id="parallax" className="wide mb-10 sm:mb-24 max-h-[80vh]">
-        <div
-          className="background-image bg-[--bg-cards]"
-          style={{ transform: `translateY(${scrolled * 0.3 - 520}px)` }}
-        ></div>
-      </section> */}
     </section>
   );
 };
