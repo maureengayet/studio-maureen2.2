@@ -26,7 +26,7 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.5 }}
       >
-        <h1 className="serif text-huge text-center mt-[-8vh] md:mt-[-2vh] text-[2.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[4.8rem] xl:text-[5.4rem] 2xl:text-[6.5rem]">
+        <h1 className="serif text-huge text-center mt-[-8vh] md:mt-[-2vh] text-[2.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[4.8rem] xl:text-[5.4rem] 2xl:text-[5.8rem]">
           Bespoke <span className="italic">development</span>{" "}
           <span className="new-line">for</span>{" "}
           <span className="italic">unique</span> front-end{" "}
@@ -35,7 +35,7 @@ const Intro = () => {
           <span className="italic">elevate</span> your brand.
         </h1>
       </motion.div>
-      <div className="intro-footer inner-p-x max-w w-full wide absolute bottom-4 sm:bottom-10 flex justify-between gap-y-4 flex-col sm:flex-row">
+      <div className="intro-footer inner-p-x max-w w-full wide absolute bottom-4 sm:bottom-6 flex justify-between gap-y-4 flex-col sm:flex-row">
         <div className="flex grow">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
