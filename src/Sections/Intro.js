@@ -4,6 +4,14 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { ClipboardIcon } from "@heroicons/react/24/outline";
 
 const Intro = () => {
+
+  function getNextMonthQuarter() {
+    const now = new Date();
+    const nextMonth = (now.getMonth() + 1) % 12;
+    const quarter = Math.floor(nextMonth / 3) + 1;
+    return `Booking Q${quarter}`;
+  }
+
   return (
     <section
       id="intro"
@@ -45,7 +53,7 @@ const Intro = () => {
           >
             <h3 className="font-semibold text-small small-caps">Current</h3>
             <p className="text-small small-caps">Available for Work</p>
-            <p className="text-small small-caps">Booking Q3</p>
+            <p className="text-small small-caps">{getNextMonthQuarter()}</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
