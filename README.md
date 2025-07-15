@@ -19,6 +19,7 @@ git clone https://github.com/maureengayet/studio-maureen2.2.git
 cd studio-maureen2.2
 npm install
 npm start
+```
 
 ## ✨ Features
 
@@ -39,4 +40,7 @@ This project is open source under the [MIT License](LICENSE).
 I'm Maureen, a freelance UI/UX designer and frontend developer based in Sweden. I specialize in crafting effortless, user-centered digital experiences — from concept and design to functional, responsive interfaces.
 
 Visit my portfolio at [studio-maureen.com](https://www.studio-maureen.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/maureen-gayet).
+
+```
+
 ```
