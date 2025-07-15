@@ -6,7 +6,7 @@ This is the source code for [Studio Maureen](https://www.studio-maureen.com), my
 
 - **React**
 - **TypeScript**
-- **Vite**
+- **Create React App**
 - **Tailwind CSS**
 - **Framer Motion**
 
