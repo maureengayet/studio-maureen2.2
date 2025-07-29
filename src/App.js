@@ -16,7 +16,7 @@ function App() {
 			loadGoogleAnalytics();
 			setGaInitialized(true);
 		}
-	}, []);
+	}, [gaInitialized]);
 
 	const handleAcceptCookies = () => {
 		if (!gaInitialized) {
