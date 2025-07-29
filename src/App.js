@@ -62,7 +62,6 @@ function App() {
 			</motion.div>
 
 			<CookieConsent
-				debug={true}
 				disableStyles={true}
 				location="bottom"
 				buttonText="Accept"
