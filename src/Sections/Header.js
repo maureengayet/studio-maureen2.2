@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import ToggleMode from "../Components/ToggleMode/ToggleMode";
 
-
 const Header = () => {
 	const location = useLocation();
 

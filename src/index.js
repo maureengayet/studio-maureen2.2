@@ -6,9 +6,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ContactPage from "./Pages/ContactPage";
 import HomePage from "./Pages/HomePage";
-import ReactGA from "react-ga4";
-
-ReactGA.initialize("G-MYQR3G9J4R");
+import PrivacyPage from "./Pages/PrivacyPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,6 +17,7 @@ root.render(
 				<Route path="/" element={<App />}>
 					<Route index element={<HomePage />}></Route>
 					<Route path="contact" element={<ContactPage />}></Route>
+					<Route path="privacy" element={<PrivacyPage />}></Route>
 				</Route>
 			</Routes>
 		</BrowserRouter>
