@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 import PageTracker from "./Components/PageTracker";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
 	const [gaInitialized, setGaInitialized] = useState(false);
@@ -55,11 +56,13 @@ function App() {
 		<>
 			{gaInitialized && <PageTracker />}
 
-			<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 0.7 }}>
-				<Header />
-				<Outlet />
-				<Footer />
-			</motion.div>
+			<ParallaxProvider>
+				<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 0.7 }}>
+					<Header />
+					<Outlet />
+					<Footer />
+				</motion.div>
+			</ParallaxProvider>
 
 			<CookieConsent
 				disableStyles={true}

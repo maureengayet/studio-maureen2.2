@@ -1,4 +1,16 @@
+import { useEffect, useState } from "react";
+import { Parallax } from "react-scroll-parallax";
+
 const About = () => {
+	const [theme, setTheme] = useState("light");
+
+	useEffect(() => {
+		const currentTheme = document.documentElement.getAttribute("data-theme");
+		if (currentTheme === "dark" || currentTheme === "light") {
+			setTheme(currentTheme);
+		}
+	}, []);
+
 	return (
 		<section id="about" className="relative max-w w-full leading-snug lg:leading-snug">
 			<div className="max-w w-full h-px mt-10 sm:mt-24 bg-[var(--color-white)] opacity-30"></div>
@@ -15,12 +27,14 @@ const About = () => {
 					</p>
 				</div>
 			</div>
-			<div className="img wide relative overflow-hidden h-[500px] md:h-[750px] lg:h-[850px] b-10 sm:mb-24">
-				<img
-					className="transition-colors rounded-2xl 4 bg-[--bg-cards] absolute inset-0 object-cover h-full w-full"
-					src="./cards.png"
-					alt="Studio Maureen Cards"
-				/>
+			<div className="wide relative overflow-hidden rounded-2xl h-[500px] md:h-[750px] lg:h-[850px] b-10 sm:mb-24">
+				<Parallax speed={-30}>
+					<img
+						className="transition-colors object-cover h-full w-full"
+						src={theme === "dark" ? "./cards-dark.jpg" : "./cards-light.jpg"}
+						alt="Studio Maureen Cards"
+					/>
+				</Parallax>
 			</div>
 		</section>
 	);
