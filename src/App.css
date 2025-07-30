@@ -43,7 +43,7 @@
 
 #intro {
   .bg {
-	transform: translateY(10vh);
+    transform: translateY(10vh);
     background-image: url("./../public/bg.png");
     top: 0;
     left: 0;
