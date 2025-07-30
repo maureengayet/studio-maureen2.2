@@ -44,7 +44,6 @@ const PrivacyPage = () => {
 			<ul class="list-disc list-inside mt-2 mb-4">
 				<li>Accept or decline cookies via the banner when you first visit</li>
 				<li>Clear or block cookies in your browser at any time</li>
-				<li>Revisit the cookie settings by [add a link here if needed]</li>
 			</ul>
 
 			<h2 class="text-2xl font-semibold mt-8">4. No personal data is sold or shared</h2>
