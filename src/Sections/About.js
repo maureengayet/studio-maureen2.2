@@ -3,6 +3,7 @@ import { Parallax } from "react-scroll-parallax";
 
 const About = () => {
 	const [theme, setTheme] = useState("light");
+	const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
 	useEffect(() => {
 		const currentTheme = document.documentElement.getAttribute("data-theme");
@@ -27,11 +28,21 @@ const About = () => {
 					</p>
 				</div>
 			</div>
-			<div className="wide relative overflow-hidden rounded-2xl h-[500px] md:h-[750px] lg:h-[850px] mb-20 sm:mb-24">
-				<Parallax speed={-30} className="h-full w-full">
-					<div className="relative h-full w-full">
-						<img
-							className="
+
+			{isMobile ? (
+				<div className="img wide relative overflow-hidden h-[500px] md:h-[750px] lg:h-[850px] mb-20  sm:mb-24">
+					<img
+						className="transition-colors rounded-2xl 4 bg-[--bg-cards] absolute inset-0 object-cover h-full w-full"
+						src={theme === "dark" ? "./cards-dark.jpg" : "./cards-light.jpg"}
+						alt="Studio Maureen Cards"
+					/>
+				</div>
+			) : (
+				<div className="wide relative overflow-hidden rounded-2xl h-[500px] md:h-[750px] lg:h-[850px] mb-20 sm:mb-24">
+					<Parallax speed={-30} className="h-full w-full">
+						<div className="relative h-full w-full">
+							<img
+								className="
           absolute inset-0
           w-full h-full
           object-cover
@@ -39,12 +50,13 @@ const About = () => {
           transition-transform
           scale-[1.3] sm:scale-[1.2] md:scale-100
         "
-							src={theme === "dark" ? "./cards-dark.jpg" : "./cards-light.jpg"}
-							alt="Studio Maureen Cards"
-						/>
-					</div>
-				</Parallax>
-			</div>
+								src={theme === "dark" ? "./cards-dark.jpg" : "./cards-light.jpg"}
+								alt="Studio Maureen Cards"
+							/>
+						</div>
+					</Parallax>
+				</div>
+			)}
 		</section>
 	);
 };

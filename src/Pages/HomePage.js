@@ -2,6 +2,7 @@ import Intro from "./../Sections/Intro";
 import About from "../Sections/About";
 import Work from "./../Sections/Work";
 import Contact from "../Sections/Contact";
+import Clients from "../Sections/Clients";
 
 const HomePage = () => {
 	return (
@@ -9,6 +10,7 @@ const HomePage = () => {
 			<Intro />
 			<About />
 			<Work />
+			{/* <Clients /> */}
 			<Contact />
 		</section>
 	);
