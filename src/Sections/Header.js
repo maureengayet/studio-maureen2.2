@@ -1,5 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
-import ToggleMode from "../Components/ToggleMode/ToggleMode";
+import { Link, useLocation } from 'react-router-dom';
+import ToggleMode from '../Components/ToggleMode/ToggleMode';
 
 const Header = () => {
   const location = useLocation();
@@ -7,7 +7,7 @@ const Header = () => {
   const scrollToTopSmooth = () => {
     document.documentElement.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
@@ -23,14 +23,12 @@ const Header = () => {
     }
   };
 
-  const navigation = [{ breadcrumb: "Contact", url: "/contact" }];
+  const navigation = [{ breadcrumb: 'Contact', url: '/contact' }];
 
   const navigationList = navigation.map((link, index) => (
     <p
       key={index}
-      className={`${
-        location.pathname === link.url ? "current" : ""
-      } font-semibold text-small small-caps`}
+      className={`${location.pathname === link.url ? 'current' : ''} text-small small-caps font-semibold`}
     >
       <Link onClick={() => scrollToTop(link.url)} to={link.url}>
         {link.breadcrumb}
@@ -40,7 +38,7 @@ const Header = () => {
 
   return (
     <header id="header" className="wide">
-      <Link className="Home-link" to="/" onClick={() => scrollToTop("/")}>
+      <Link className="Home-link" to="/" onClick={() => scrollToTop('/')}>
         <svg
           width="40"
           height="40"

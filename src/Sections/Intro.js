@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
-import { ClipboardIcon } from "@heroicons/react/24/outline";
+import { motion } from 'framer-motion';
+import { ArrowDownCircleIcon } from '@heroicons/react/24/solid';
+import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
+import { ClipboardIcon } from '@heroicons/react/24/outline';
 
 const Intro = () => {
   function getNextMonthQuarter() {
@@ -12,27 +12,26 @@ const Intro = () => {
   }
 
   return (
-    <section
-      id="intro"
-      className="h-[700px] sm:h-svh relative flex justify-center align-center"
-    >
+    <section id="intro" className="align-center relative flex h-[700px] justify-center sm:h-svh">
       <div className="bg"></div>
       <motion.div
-        className="self-center max-w-[80%]"
+        className="max-w-[80%] self-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.5 }}
       >
-        <h1 className="serif text-huge text-center mt-[-8vh] md:mt-[-2vh] text-[2.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[4.8rem] xl:text-[5.4rem] 2xl:text-[5.8rem]">
-          Bespoke <span className="italic">development</span>{" "}
+        <h1 className="serif text-huge mt-[-8vh] text-center text-[2.5rem] sm:text-[4rem] md:mt-[-2vh] md:text-[4.5rem] lg:text-[4.8rem] xl:text-[5.4rem] 2xl:text-[5.8rem]">
+          {/* Bespoke <span className="italic">development</span>{" "}
           <span className="new-line">for</span>{" "}
           <span className="italic">unique</span> front-end{" "}
           <span className="new-line">solutions.</span> Crafting digital
           solutions <span className="new-line">to</span>{" "}
-          <span className="italic">elevate</span> your brand.
+          <span className="italic">elevate</span> your brand. */}
+          Bespoke <span className="italic">digital </span>solutions, <span className="new-line" />
+          to elevate your brand.
         </h1>
       </motion.div>
-      <div className="intro-footer inner-p-x max-w w-full wide absolute bottom-4 sm:bottom-6 flex justify-between gap-y-4 flex-col sm:flex-row">
+      <div className="intro-footer inner-p-x max-w wide absolute bottom-4 flex w-full flex-col justify-between gap-y-4 sm:bottom-6 sm:flex-row">
         <div className="flex grow">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -40,7 +39,7 @@ const Intro = () => {
             transition={{ delay: 1.2, duration: 0.5 }}
             className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4"
           >
-            <h3 className="font-semibold text-small small-caps">Current</h3>
+            <h3 className="text-small small-caps font-semibold">Current</h3>
             <p className="text-small small-caps">Available for Work</p>
             <p className="text-small small-caps">{getNextMonthQuarter()}</p>
           </motion.div>
@@ -50,21 +49,17 @@ const Intro = () => {
             transition={{ delay: 1.7, duration: 0.5 }}
             className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4"
           >
-            <h3 className="font-semibold text-small small-caps">Contact</h3>
-            <p link="/contact" className="uppercase text-small small-caps">
+            <h3 className="text-small small-caps font-semibold">Contact</h3>
+            <p link="/contact" className="text-small small-caps uppercase">
               <a href="mailto:maureen@studio-maureen.com">Email us </a>
-              <ClipboardIcon className="size-3 inline ml-1 mb-1" />
+              <ClipboardIcon className="mb-1 ml-1 inline size-3" />
             </p>
 
-            <p className="uppercase text-small small-caps">
-              <a
-                target="_blank"
-                href="http://instagram.com/studio__maureen"
-                rel="noreferrer"
-              >
+            <p className="text-small small-caps uppercase">
+              <a target="_blank" href="http://instagram.com/studio__maureen" rel="noreferrer">
                 @Studio__Maureen
-              </a>{" "}
-              <ArrowUpRightIcon className="size-3 inline ml-1 mb-1" />
+              </a>{' '}
+              <ArrowUpRightIcon className="mb-1 ml-1 inline size-3" />
             </p>
           </motion.div>
         </div>
@@ -72,10 +67,10 @@ const Intro = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2.2, duration: 0.5 }}
-          className="hidden sm:flex sm:w-1/5 text-right flex items-end sm:justify-end"
+          className="flex hidden items-end text-right sm:flex sm:w-1/5 sm:justify-end"
         >
-          <p className="uppercase text-small small-caps">
-            <ArrowDownCircleIcon className="size-5 inline mr-2 mb-1" /> Scroll
+          <p className="text-small small-caps uppercase">
+            <ArrowDownCircleIcon className="mb-1 mr-2 inline size-5" /> Scroll
           </p>
         </motion.div>
       </div>
